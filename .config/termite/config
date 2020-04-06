@@ -12,10 +12,10 @@ clickable_url= true
 [colors]
 
 # special
-foreground      = #ababab
-foreground_bold = #ababab
-cursor          = #ababab
-background      = #002b36
+foreground      = #23edda
+foreground_bold = #23edda
+cursor          = #23edda
+background      = #001220
 
 # black
 color0  = #000000
@@ -42,8 +42,8 @@ color5  = #f996e2
 color13 = #f996e2
 
 # cyan
-color6  = #23edda
-color14 = #23edda
+color6  = #ababab
+color14 = #666666
 
 # white
 color7  = #ababab
