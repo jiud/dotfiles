@@ -162,7 +162,7 @@ exec xsetroot -cursor_name left_ptr
 exec picom 
 exec udiskie --no-automount --tray
 #set wallpaper, fill with theme color
-exec feh --bg-center -B "#002b36" ~/pacwall/pacwall.png
+exec /home/dennis/pacwall/pacwall.sh -g 5 -b "#001220"
 exec /home/dennis/.screenlayout/home_normal_screen.sh
 exec volumeicon 
 exec nm-applet 

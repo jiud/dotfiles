@@ -1,7 +1,7 @@
 [options]
 
-#font = Iosevka Term SS07 Medium 11
 font = CozetteVector 9
+#font = JetBrainsMonoMedium Nerd Font Mono Bold 9 
 cursor_shape = block
 cursor_color = white
 clickable_url= true
@@ -9,13 +9,55 @@ clickable_url= true
 # [colors]
 # 
 # color14 = #2aa198
+
+#[colors]
+#
+## special
+#foreground      = #d0d0d0
+#foreground_bold = #d0d0d0
+#cursor          = #d0d0d0
+#background      = #001220
+#
+## black
+#color0  = #000000
+#color8  = #808080
+#
+## red
+#color1  = #ff0000
+#color9  = #ff0000
+#
+## green
+#color2  = #33ff00
+#color10 = #33ff00
+#
+## yellow
+#color3  = #ff0099
+#color11 = #ff0099
+#
+## blue
+#color4  = #0066ff
+#color12 = #0066ff
+#
+## magenta
+#color5  = #cc00ff
+#color13 = #cc00ff
+#
+## cyan
+#color6  = #00ffff
+#color14 = #00ffff
+#
+## white
+#color7  = #d0d0d0
+#color15 = #ffffff
+
 [colors]
 
 # special
-foreground      = #23edda
-foreground_bold = #23edda
-cursor          = #23edda
-background      = #001220
+foreground      = #ababab
+foreground_bold = #ababab
+cursor          = #ababab
+background      = rgba(0, 18, 32, 1)
+#background      = #001220
 
 # black
 color0  = #000000
@@ -42,8 +84,8 @@ color5  = #f996e2
 color13 = #f996e2
 
 # cyan
-color6  = #ababab
-color14 = #666666
+color6  = #23edda
+color14 = #23edda
 
 # white
 color7  = #ababab
