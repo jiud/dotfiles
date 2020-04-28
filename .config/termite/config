@@ -2,8 +2,8 @@
 
 font = CozetteVector 9
 #font = JetBrainsMonoMedium Nerd Font Mono Bold 9 
-cursor_shape = block
-cursor_color = white
+cursor_shape = ibeam
+cursor_foreground = #ACCC00
 clickable_url= true
 
 # [colors]

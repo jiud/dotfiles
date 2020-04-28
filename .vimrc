@@ -1,6 +1,5 @@
 execute pathogen#infect()
 
-set background=light
 set encoding=UTF-8
 set expandtab
 set tabstop=4
@@ -10,6 +9,7 @@ set ignorecase
 set smartcase
 set linebreak
 set nowrap
+set showcmd
 "set clipboard to be the system clipboard
 set clipboard=unnamedplus 
 syntax enable
@@ -18,6 +18,30 @@ set number
 set relativenumber
 "set foldmethod=indent
 
+"""
+""" COLOR SETTINGS
+"""
+"""
+
+set background=light
+" Enables cursor line position tracking:
+set cursorline
+" Removes the underline causes by enabling cursorline:
+highlight clear CursorLine
+" Sets the line numbering to red background:
+highlight CursorLineNR cterm=bold ctermfg=yellow
+" Change the line number colors
+highlight LineNr ctermfg=235
+"makes visual mode underlined and yellow
+hi Visual ctermfg=Yellow ctermbg=NONE cterm=bold,underline 
+
+
+"""
+""" NERDTree SETTINGS
+"""
+"""
+
+
 "Open NERDtree automatically when no files are specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -25,8 +49,24 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "Shortcut for NERDtree
 map <C-n> :NERDTreeToggle<CR>
 
+
+
+"""
+""" Register SETTINGS
+"""
+"""
+
+
+"delete into x register with x, so it does not overlab with system clipboard
+vnoremap x "xd
 "paste without yanking
 vnoremap p "_dP
+
+
+"""
+""" indentLine SETTINGS
+"""
+"""
 
 let g:indentLine_char_list = ['│', '¦', '┆', '┊']
 let g:indentLine_color_term = 239
