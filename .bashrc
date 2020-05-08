@@ -16,7 +16,8 @@ alias light='sudo ~/scripts/bright_change.sh' #alias for brightness change
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles_git_backup/ --work-tree=$HOME' #easily manage dotfiles
 alias logoff='killall i3' #alias for logging out
 alias untar='tar -zxvf' #extract tar file to current directory quickly 
-
+alias dots='cd /home/dennis/.config/' #quickly tweak things
+alias vim='nvim' #replacing vim with nvim
 
 #PS1='[\u@\h \W]\$ '
 #PS1='[\u@\h \W]\$ 'i

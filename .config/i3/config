@@ -105,7 +105,7 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $workspace1 "1: Code"
 set $workspace2 "2: Web"
-set $workspace3 "3: Excel"
+set $workspace3 "3: Writing"
 set $workspace4 "4: Video"
 set $workspace5 "5: FTP"
 set $workspace6 "6: Tasks"
@@ -188,7 +188,7 @@ bar {
     status_command i3blocks
     workspace_buttons yes
     position bottom
-    tray_output HDMI-1
+    tray_output primary
     tray_padding 0
     separator_symbol " "
 }

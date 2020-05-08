@@ -1,10 +1,5 @@
 SCRIPT_DIR=/home/dennis/.config/i3blocks/scripts
 
-[window]
-command=xtitle -s
-interval=persist
-position=left
-
 # Guess the weather hourly
 [weather]
 command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
