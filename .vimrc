@@ -1,37 +1,38 @@
-execute pathogen#infect()
-
-set encoding=UTF-8
-set expandtab
-set tabstop=4
-set autoindent
-set shiftwidth=4
-set ignorecase
-set smartcase
-set linebreak
-set nowrap
-set showcmd
 "set clipboard to be the system clipboard
 set clipboard=unnamedplus 
+set foldmethod=manual
+set encoding=UTF-8
+set relativenumber
+set shiftwidth=4
+set ignorecase
+set expandtab
+set tabstop=4
+set smartcase
+set linebreak
+set showcmd
+set nowrap
+set number
+
 syntax enable
 filetype plugin indent on
-set number
-set relativenumber
-"set foldmethod=indent
+
 
 """
 """ COLOR SETTINGS
 """
 """
 
+
 set background=light
 " Enables cursor line position tracking:
 set cursorline
+
 " Removes the underline causes by enabling cursorline:
-highlight clear CursorLine
+highlight clear cursorline
 " Sets the line numbering to red background:
 highlight CursorLineNR cterm=bold ctermfg=yellow
 " Change the line number colors
-highlight LineNr ctermfg=235
+highlight LineNr ctermfg=237
 "makes visual mode underlined and yellow
 hi Visual ctermfg=Yellow ctermbg=NONE cterm=bold,underline 
 
@@ -225,6 +226,11 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 """""
 """""
 
-"always last 
+""always last 
+
+" adding devicons to vim-airline's statusline
+let g:webdevicons_enable_airline_statusline = 1
+" adding the devicons flags to NERDTree
+let g:webdevicons_enable_nerdtree = 1
 let g:airline_powerline_fonts = 1
 

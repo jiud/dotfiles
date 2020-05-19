@@ -1,5 +1,5 @@
 "set clipboard to be the system clipboard
-set clipboard=unnamedplus 
+set clipboard+=unnamedplus 
 set foldmethod=manual
 set encoding=UTF-8
 set relativenumber
@@ -27,11 +27,22 @@ Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
 "mustache syntax
-Plug  'mustache/vim-mustache-handlebars' 
+Plug  'jsit/vim-mustache-handlebars' 
 
 "coc plugin, autocomplete and syntax checking
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+"gruvbox theme
+Plug 'morhetz/gruvbox'
+
+"make indents have characters
+Plug 'Yggdroot/indentLine'
+
+"really cool status bar 
+Plug 'vim-airline/vim-airline'
+
+"themes for airline
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -42,7 +53,11 @@ call plug#end()
 """
 
 
-set background=light
+set background=dark
+colorscheme gruvbox
+
+highlight Cursor guifg=white guibg=black
+
 " Enables cursor line position tracking:
 set cursorline
 
@@ -75,13 +90,8 @@ map <C-n> :NERDTreeToggle<CR>
 """ Register SETTINGS
 """
 """
-
-
-"delete into x register with x, so it does not overlab with system clipboard
-vnoremap x "xd
 "paste without yanking
 vnoremap p "_dP
-
 
 """
 """ indentLine SETTINGS
@@ -105,7 +115,7 @@ set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+"set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.

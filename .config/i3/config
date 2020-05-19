@@ -103,12 +103,12 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $workspace1 "1: Code"
-set $workspace2 "2: Web"
-set $workspace3 "3: Writing"
-set $workspace4 "4: Video"
-set $workspace5 "5: FTP"
-set $workspace6 "6: Tasks"
+set $workspace1 "1:  Code"
+set $workspace2 "2:  Web"
+set $workspace3 "3:  Writing"
+set $workspace4 "4:  Media"
+set $workspace5 "5:  FTP"
+set $workspace6 "6:  Tasks"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
@@ -185,6 +185,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+    font pango:CozetteVector 9
+    height 20
     status_command i3blocks
     workspace_buttons yes
     position bottom
@@ -203,6 +205,8 @@ exec /home/dennis/.screenlayout/home_normal_screen.sh
 exec volumeicon 
 exec nm-applet 
 exec blueman-tray 
+exec birdtray
+exec conky
 exec xfce4-power-manager 
 exec --no-startup-id "setxkbmap -layout us,gr -option 'grp:alt_shift_toggle'"
 

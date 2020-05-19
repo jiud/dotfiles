@@ -29,7 +29,7 @@ git_branch() {
 
 export PS1="\[\033[32m\]╭─\[\033[00m\]⏵ \u \[\033[33m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[32m\]╰──⏵\$ \[\033[00m\]"
 
-export EDITOR=vim
+export EDITOR=nvim
 
 export PF_INFO="os kernel uptime pkgs memory"
 

@@ -6,6 +6,14 @@ command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
 interval=3600
 color=#A4C2F4
 
+[aur-update]
+command=$SCRIPT_DIR/aur-update
+markup=pango
+interval=43200
+UPDATE_COLOR=red
+QUIET=1
+IGNORE=root vidyodesktop
+
 [cpu_usage2]
 command=$SCRIPT_DIR/cpu_usage2/cpu_usage2
 markup=pango
@@ -36,14 +44,6 @@ min_width=bat: ■■■■■
 #FULL_COLOR=#FFFFFF
 #AC_COLOR=#535353
 
-[arch-update]
-command=$SCRIPT_DIR/arch-update
-markup=pango
-interval= 3600
-BASE_COLOR=#5fff5f
-UPDATE_COLOR=#FFFF85
-AUR=true
-LABEL= 
 
 [date]
 command=date +'%a %d %b %Y %H:%M:%S'
