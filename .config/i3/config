@@ -73,7 +73,6 @@ bindsym $mod+Shift+Right move right
 # split in horizontal orientation
 bindsym $mod+h split h
 
-default_border pixel 1
 
 #rofi launch
 bindsym $mod+d exec rofi -show drun -modi drun -hide-scrollbar -width 15 -location 1 -show-icons -font "CozetteVector 9" -matching fuzzy
@@ -105,14 +104,14 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $workspace1 "1:  Code"
 set $workspace2 "2:  Web"
-set $workspace3 "3:  Writing"
-set $workspace4 "4:  Media"
+set $workspace3 "3:  Tasks"
+set $workspace4 "4:  Writing"
 set $workspace5 "5:  FTP"
-set $workspace6 "6:  Tasks"
+set $workspace6 "6:  Media"
 set $workspace7 "7"
 set $workspace8 "8"
 set $workspace9 "9"
-set $workspace10 "10"
+set $workspace10 "10:  Examples"
 
 
 # switch to workspace
@@ -132,7 +131,7 @@ workspace $workspace2 output HDMI-1
 workspace $workspace3 output HDMI-1
 workspace $workspace4 output HDMI-1
 workspace $workspace5 output HDMI-1
-workspace $workspace6 output eDP-1
+workspace $workspace6 output HDMI-1
 workspace $workspace7 output eDP-1
 workspace $workspace8 output eDP-1
 workspace $workspace9 output eDP-1
@@ -156,6 +155,29 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+#default border
+default_border normal 2
+
+###enable floating windows to have titles
+default_floating_border normal
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #333333 #222222 #84ED11 #292d2e   #222222 
+client.focused_inactive #333333 #222222 #ffffff #484e50   #222222
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #ffffff
+
+
+### enable java windows to run inf floating mode, with title
+for_window [class="java"] floating enable
+
+#71 == F5, 72 == F6
+bindcode 71 exec firefox 
+bindcode 72 exec arandr 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -185,14 +207,24 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-    font pango:CozetteVector 9
+    font pango: CozetteVector 9 
     height 20
     status_command i3blocks
     workspace_buttons yes
     position bottom
     tray_output primary
     tray_padding 0
-    separator_symbol " "
+   #separator_symbol " ┊ "
+    separator_symbol " 🮌 "
+	
+	colors 
+	{
+	
+	background #090909
+	focused_workspace #CC6C00 #000000 #CC6C00
+	
+	}
+
 }
 
 #exec xfce4-panel 
@@ -200,7 +232,7 @@ exec xsetroot -cursor_name left_ptr
 exec picom 
 exec udiskie --tray
 #set wallpaper, fill with theme color
-exec /home/dennis/pacwall/pacwall.sh -g 5 -b "#001220"
+exec /home/dennis/pacwall/pacwall.sh -g 5 -b "#000000"
 exec /home/dennis/.screenlayout/home_normal_screen.sh
 exec volumeicon 
 exec nm-applet 

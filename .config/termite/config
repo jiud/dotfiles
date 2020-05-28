@@ -1,9 +1,10 @@
 [options]
 
 font = CozetteVector 9
+#font = salvadorMono 12 
 #font = JetBrainsMonoMedium Nerd Font Mono Bold 9 
-cursor_shape = block
-cursor_foreground = #ACCC00
+cursor_shape = ibeam
+#cursor_foreground = #ACCC00
 clickable_url= true
 
 # [colors]
@@ -57,6 +58,7 @@ foreground      = #ababab
 foreground_bold = #ababab
 cursor          = #ababab
 background      = #001220
+#background      = #000000
 
 # black
 color0  = #000000

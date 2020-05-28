@@ -18,6 +18,7 @@ alias logoff='killall i3' #alias for logging out
 alias untar='tar -zxvf' #extract tar file to current directory quickly 
 alias dots='cd /home/dennis/.config/' #quickly tweak things
 alias vim='nvim' #replacing vim with nvim
+alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' #making ranger dump you in the directory you exit from!
 
 #PS1='[\u@\h \W]\$ '
 #PS1='[\u@\h \W]\$ 'i

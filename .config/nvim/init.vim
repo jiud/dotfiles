@@ -5,7 +5,8 @@ set encoding=UTF-8
 set relativenumber
 set shiftwidth=4
 set ignorecase
-set expandtab
+"always use spaces for indentation
+"set expandtab
 set tabstop=4
 set smartcase
 set linebreak
@@ -13,6 +14,8 @@ set showcmd
 set nowrap
 set number
 
+set list
+set lcs=tab:\│\  
 
 """
 """ LOADING PLUGINS
@@ -35,8 +38,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "gruvbox theme
 Plug 'morhetz/gruvbox'
 
-"make indents have characters
-Plug 'Yggdroot/indentLine'
+"make space indents have characters
+"Plug 'Yggdroot/indentLine'
 
 "really cool status bar 
 Plug 'vim-airline/vim-airline'

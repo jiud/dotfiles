@@ -1,5 +1,6 @@
 SCRIPT_DIR=/home/dennis/.config/i3blocks/scripts
 
+
 # Guess the weather hourly
 [weather]
 command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
@@ -44,7 +45,6 @@ min_width=bat: ■■■■■
 #FULL_COLOR=#FFFFFF
 #AC_COLOR=#535353
 
-
 [date]
 command=date +'%a %d %b %Y %H:%M:%S'
 interval=1
@@ -55,3 +55,4 @@ font=Iosevka
 font_weight=bold
 interval=persist
 markup=pango
+
