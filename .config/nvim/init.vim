@@ -38,6 +38,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "gruvbox theme
 Plug 'morhetz/gruvbox'
 
+"color color codes
+Plug 'chrisbra/Colorizer'
+"
 "make space indents have characters
 "Plug 'Yggdroot/indentLine'
 
