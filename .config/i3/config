@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod4
+set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -89,7 +89,7 @@ bindsym $mod+t layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+w floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -157,7 +157,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 #light mode of terminal when pressing l with enter key
-bindsym $mod+Mod1+Return exec "termite -c /home/dennis/.config/termite/lightmodeconfig"
+bindsym $mod+Shift+Return exec "termite -c /home/dennis/.config/termite/lightmodeconfig"
 
 #default border
 default_border normal 2
@@ -244,5 +244,6 @@ exec blueman-tray
 exec birdtray
 exec conky
 exec xfce4-power-manager 
-exec --no-startup-id "setxkbmap -layout us,gr -option 'grp:alt_shift_toggle'"
+exec dunst
+exec --no-startup-id "setxkbmap -layout us,gr -option 'grp:alt_space_toggle'"
 

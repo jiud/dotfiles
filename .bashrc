@@ -34,5 +34,15 @@ export EDITOR=nvim
 
 export PF_INFO="os kernel uptime pkgs memory"
 
+#antialias fonts in java apps
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+
+#exporting apache poi and apache commons for java
+export CLASSPATH=/usr/share/poi-4.1.2/poi-4.1.2.jar:/usr/share/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar:/usr/share/poi-4.1.2/poi-ooxml-4.1.2.jar:/usr/share/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar:/usr/share/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar:/usr/local/Apache/commons-collections4-4.4/commons-collections4-4.4.jar:/usr/local/Apache/commons-io-2.7/commons-io-2.7.jar:/usr/local/Apache/commons-compress-1.20/commons-compress-1.20.jar
+
+#exporting apache home dir
+export APACHE_HOME=/usr/local/Apache
+
+
 /home/dennis/scripts/bashinfo/bashinfo.sh
 #neofetch

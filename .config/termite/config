@@ -2,7 +2,7 @@
 
 font = CozetteVector 9
 #font = salvadorMono 12 
-#font = JetBrainsMonoMedium Nerd Font Mono Bold 9 
+#font = JetBrainsMonoMedium Nerd Font Mono Bold 12 
 cursor_shape = ibeam
 #cursor_foreground = #ACCC00
 clickable_url= true

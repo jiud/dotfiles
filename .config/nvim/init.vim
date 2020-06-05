@@ -18,6 +18,17 @@ set list
 set lcs=tab:\│\  
 
 """
+""" Useful keybindings
+"""
+
+"" I mislick a lot
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
+
+
+"""
 """ LOADING PLUGINS
 """
 
