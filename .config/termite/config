@@ -2,6 +2,7 @@
 
 font = CozetteVector 9
 #font = salvadorMono 12 
+#font = BigBlue_TerminalPlus Nerd Font 9  
 #font = JetBrainsMonoMedium Nerd Font Mono Bold 12 
 cursor_shape = ibeam
 #cursor_foreground = #ACCC00

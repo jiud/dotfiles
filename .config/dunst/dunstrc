@@ -10,7 +10,6 @@ horizontal_padding = 32
 frame_width = 2
 sort = no
 idle_threshold = 120
-font = rissole 8
 line_height = 4
 markup = full
 format = %s\n%b
@@ -28,7 +27,7 @@ browser = /usr/bin/firefox -new-tab
 always_run_script = true
 title = Dunst
 class = Dunst
-font = CozetteVector 9
+font = "CozetteVector 9"
 
 [shortcuts]
 close = ctrl+space
