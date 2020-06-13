@@ -104,15 +104,14 @@ bindsym $mod+a focus parent
 # We use variables to avoid repeating the names in multiple places.
 set $workspace1 "1:  Code"
 set $workspace2 "2:  Web"
-set $workspace3 "3:  Writing"
-set $workspace4 "4:  Tasks"
-set $workspace5 "5:  FTP"
+set $workspace3 "3:  Tasks"
+set $workspace4 "4:  Writing"
+set $workspace5 "5:  System"
 set $workspace6 "6:  Media"
 set $workspace7 "7:  Editing"
-set $workspace8 "8"
+set $workspace8 "8:  Server"
 set $workspace9 "9"
 set $workspace10 "10:  Examples"
-
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1  

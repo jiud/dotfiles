@@ -1,6 +1,5 @@
 SCRIPT_DIR=/home/dennis/.config/i3blocks/scripts
 
-
 # Guess the weather hourly
 [weather]
 command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
@@ -48,6 +47,12 @@ min_width=bat: ■■■■■
 [date]
 command=date +'%a %d %b %Y %H:%M:%S'
 interval=1
+
+[suspend]
+full_text="Sleep "
+align=center
+command=systemctl suspend
+
 
 [xkb_layout]
 command=$SCRIPT_DIR/xkb_layout
