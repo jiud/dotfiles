@@ -161,6 +161,9 @@ bindsym $mod+Shift+Return exec "termite -c /home/dennis/.config/termite/lightmod
 #default border
 default_border normal 2
 
+#space from edges of screen
+#gaps outer 6
+
 ###enable floating windows to have titles
 default_floating_border normal
 
@@ -209,11 +212,13 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-    font pango: CozetteVector 9 
+    #font pango: CozetteVector 9 
+    font pango: Curie, Cozette 9 
     height 20
     status_command i3blocks
     workspace_buttons yes
-    position bottom
+    #position bottom
+    position top
     tray_output primary
     tray_padding 0
    #separator_symbol " ┊ "
@@ -235,7 +240,7 @@ exec xsetroot -cursor_name left_ptr
 exec picom 
 exec udiskie --tray
 #set wallpaper, fill with theme color
-exec /home/dennis/pacwall/pacwall.sh -g 5 -b "#000000"
+#exec /home/dennis/pacwall/pacwall.sh -g 5 -b "#000000"
 exec /home/dennis/.screenlayout/home_normal_screen.sh
 exec volumeicon 
 exec nm-applet 

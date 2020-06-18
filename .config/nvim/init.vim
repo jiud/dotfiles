@@ -15,7 +15,9 @@ set nowrap
 set number
 
 set list
-set lcs=tab:\│\  
+
+"IF TABS ARE THE INDENTS, this displays them 
+"set lcs=tab:\│\  
 
 """
 """ Useful keybindings
@@ -51,15 +53,19 @@ Plug 'morhetz/gruvbox'
 
 "color color codes
 Plug 'chrisbra/Colorizer'
-"
+
+"IF SPACES ARE INDENTS
 "make space indents have characters
-"Plug 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 
 "really cool status bar 
 Plug 'vim-airline/vim-airline'
 
 "themes for airline
 Plug 'vim-airline/vim-airline-themes'
+
+"highlight html-like tags
+Plug 'Valloric/MatchTagAlways'
 
 call plug#end()
 
@@ -79,7 +85,7 @@ highlight Cursor guifg=white guibg=black
 set cursorline
 
 " Removes the underline causes by enabling cursorline:
-highlight clear cursorline
+"highlight clear cursorline
 " Sets the line numbering to red background:
 highlight CursorLineNR cterm=bold ctermfg=yellow
 " Change the line number colors
@@ -117,6 +123,20 @@ vnoremap p "_dP
 
 let g:indentLine_char_list = ['│', '¦', '┆', '┊']
 let g:indentLine_color_term = 239
+
+"""
+""" MatchTagAlways SETTINGS
+"""
+"""
+let g:mta_use_matchparen_group = 1
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \ 'jinja' : 1,
+    \ 'html.handlebars' : 1,
+    \}
+
 
 """"
 """"
