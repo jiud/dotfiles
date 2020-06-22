@@ -6,7 +6,7 @@ set relativenumber
 set shiftwidth=4
 set ignorecase
 "always use spaces for indentation
-"set expandtab
+set expandtab
 set tabstop=4
 set smartcase
 set linebreak
@@ -123,6 +123,12 @@ vnoremap p "_dP
 
 let g:indentLine_char_list = ['│', '¦', '┆', '┊']
 let g:indentLine_color_term = 239
+
+"""
+""" Airline SETTINGS
+"""
+
+let g:airline_powerline_fonts = 1
 
 """
 """ MatchTagAlways SETTINGS
