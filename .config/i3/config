@@ -253,4 +253,5 @@ exec conky
 exec xfce4-power-manager
 exec dunst
 exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_space_toggle'"
+exec feh --bg-fill /home/dennis/pictures/coolImages/mountainMinimalist.jpg
 
