@@ -39,9 +39,6 @@ call plug#begin('~/.config/nvim/plugged')
 "nerdtree
 Plug 'preservim/nerdtree'
 
-"devicons in nertree and ailine
-Plug 'ryanoasis/vim-devicons'
-
 "mustache syntax
 Plug  'jsit/vim-mustache-handlebars' 
 
@@ -66,6 +63,10 @@ Plug 'vim-airline/vim-airline-themes'
 
 "highlight html-like tags
 Plug 'Valloric/MatchTagAlways'
+
+"devicons in nertree and ailine
+"ALWAYS LOAD LAST 
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
