@@ -162,7 +162,7 @@ bindsym $mod+Shift+Return exec "termite -c /home/dennis/.config/termite/lightmod
 default_border normal 2
 
 #space from edges of screen
-gaps outer 6
+gaps outer 10
 
 ###enable floating windows to have titles
 default_floating_border normal
@@ -220,20 +220,23 @@ bar {
     height 20
     status_command i3blocks
     workspace_buttons yes
-    #position bottom
+    #position top
     position bottom
     tray_output primary
     tray_padding 0
    #separator_symbol " ┊ "
-    separator_symbol " 🮌 "
+   #separator_symbol " 🮌 "
+    separator_symbol "  ·  "
 	
 	colors
 	{
 	
-	background #090909
+	#background #090909
+	background #021A32
 	#this is orange#focused_workspace #CC6C00 #000000 #CC6C00
-	focused_workspace  #FFFF00 #000000 #FFFF00
-	
+	focused_workspace  #FFFF00 #031528 #FFFF00
+	inactive_workspace  #04284C #456079 #04284C
+
 	}
 
 }
@@ -249,9 +252,9 @@ exec volumeicon
 exec nm-applet
 exec blueman-tray
 exec birdtray
-exec conky
 exec xfce4-power-manager
 exec dunst
 exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_space_toggle'"
 exec feh --bg-fill /home/dennis/pictures/coolImages/mountainMinimalist.jpg
+exec conky
 
