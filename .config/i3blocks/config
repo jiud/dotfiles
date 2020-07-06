@@ -61,10 +61,10 @@ full_text="Sleep "
 align=center
 command=systemctl suspend
 
-[lock]
-full_text="Lock "
-align=center
-command =i3lock-fancy -p -f 'Slash' -t 'DO NOT UNLOCK THIS PLEASE GOD'
+#[lock]
+#full_text="Lock "
+#align=center
+#command =i3lock-fancy -p -f 'Slash' -t 'DO NOT UNLOCK THIS PLEASE GOD'
 
 [xkb_layout]
 command=$SCRIPT_DIR/xkb_layout
