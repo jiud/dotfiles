@@ -14,7 +14,8 @@ set showcmd
 set nowrap
 set number
 
-set list
+"enable for showing spaces
+"set list
 
 "IF TABS ARE THE INDENTS, this displays them 
 "set lcs=tab:\│\  
@@ -82,7 +83,7 @@ colorscheme gruvbox
 
 highlight Cursor guifg=white guibg=black
 
-" Enables cursor line position tracking:
+"ράδειγμα Enables cursor line position tracking:
 set cursorline
 
 " Removes the underline causes by enabling cursorline:
