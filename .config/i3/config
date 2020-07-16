@@ -258,6 +258,7 @@ exec dunst
 exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_shift_toggle'"
 exec --no-startup-id "setxkbmap -option caps:backspace"
 exec --no-startup-id "xmodmap -e 'keycode 94 = Super_L'"
-exec feh --bg-fill /home/dennis/pictures/coolImages/mountainMinimalist.jpg
+exec --no-startup-id "xmodmap -e 'keycode 108 = backslash'"
+exec feh --bg-fill /home/dennis/pictures/coolImages/mountainMinimalistNewArch.jpg
 exec conky
 
