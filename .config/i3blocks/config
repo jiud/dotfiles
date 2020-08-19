@@ -6,14 +6,6 @@ command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
 interval=3600
 color=#A4C2F4
 
-[aur-update]
-command=$SCRIPT_DIR/aur-update
-markup=pango
-interval=43200
-UPDATE_COLOR=red
-QUIET=1
-IGNORE=root vidyodesktop
-
 [temperature]
 command=$SCRIPT_DIR/temperature
 label=Temp : 
@@ -61,10 +53,10 @@ full_text="Sleep "
 align=center
 command=systemctl suspend
 
-#[lock]
-#full_text="Lock "
-#align=center
-#command =i3lock-fancy -p -f 'Slash' -t 'DO NOT UNLOCK THIS PLEASE GOD'
+[lock]
+full_text="Lock "
+align=center
+command=i3lock-fancy -f 'scientifica' -t 'DO NOT UNLOCK THIS PLEASE GOD'
 
 [xkb_layout]
 command=$SCRIPT_DIR/xkb_layout

@@ -75,7 +75,7 @@ bindsym $mod+o split h
 
 
 #rofi launch
-bindsym $mod+d exec rofi -show drun -modi drun -hide-scrollbar -width 15 -location 1 -show-icons -font "CozetteVector 9" -matching fuzzy
+bindsym $mod+d exec rofi -show drun -modi drun -hide-scrollbar -width 10 -location 1 -show-icons -font "CozetteVector 9" -matching fuzzy
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -231,8 +231,8 @@ bar {
 	colors
 	{
 	
-	#background #090909
-	background #021A32
+	#background #021A32
+	background #000716
 	#this is orange#focused_workspace #CC6C00 #000000 #CC6C00
 	focused_workspace  #FFFF00 #031528 #FFFF00
 	inactive_workspace  #04284C #456079 #04284C
@@ -241,12 +241,13 @@ bar {
 
 }
 
-#exec xfce4-panel
+exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_shift_toggle'"
+exec sleep 2;
+exec --no-startup-id "setxkbmap -option caps:backspace"
+exec sleep 2;
 exec xsetroot -cursor_name left_ptr
 exec picom
 exec udiskie --tray
-#set wallpaper, fill with theme color
-#exec /home/dennis/pacwall/pacwall.sh -g 5 -b "#000000"
 exec /home/dennis/.screenlayout/home_normal_screen.sh
 exec volumeicon
 exec nm-applet
@@ -255,10 +256,10 @@ exec birdtray
 exec xfce4-power-manager
 exec dunst
 #Custom keyboard layout
-exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_shift_toggle'"
-exec --no-startup-id "setxkbmap -option caps:backspace"
 exec --no-startup-id "xmodmap -e 'keycode 94 = Super_L'"
+exec sleep 2;
 exec --no-startup-id "xmodmap -e 'keycode 108 = backslash'"
-exec feh --bg-fill /home/dennis/pictures/coolImages/mountainMinimalistNewArch.jpg
+exec sleep 2;
+exec feh --bg-scale /home/dennis/pictures/coolImages/jellyfishDeepArch.jpg
 exec conky
 
