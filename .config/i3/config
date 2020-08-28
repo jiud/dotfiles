@@ -163,6 +163,7 @@ default_border normal 0
 
 #space from edges of screen
 gaps outer 10
+gaps inner 0
 
 ###enable floating windows to have titles
 default_floating_border normal
@@ -186,6 +187,10 @@ for_window [title="Customize Look and Feel"] floating enable
 #71 == F5, 72 == F6
 bindcode 71 exec firefox
 bindcode 72 exec arandr
+
+#Ppl say this prevents some problems with the gaps (it does weirdly enough) 
+for_window [class=".*"] border pixel 0
+hide_edge_borders both
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -243,9 +248,7 @@ bar {
 }
 
 exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_shift_toggle'"
-exec sleep 2;
 exec --no-startup-id "setxkbmap -option caps:backspace"
-exec sleep 2;
 exec xsetroot -cursor_name left_ptr
 exec picom
 exec udiskie --tray
@@ -258,8 +261,7 @@ exec xfce4-power-manager
 exec dunst
 #Custom keyboard layout
 exec --no-startup-id "xmodmap -e 'keycode 94 = Super_L'"
-exec sleep 2;
 exec_always --no-startup-id "xmodmap -e 'keycode 108 = backslash'"
-exec sleep 2;
-exec_always feh --bg-fill /home/dennis/pictures/coolImages/gradientBlueJellyfishBurned.png
+#setting background
+exec_always --no-startup-id exec bash $HOME/.fehbg 
 
