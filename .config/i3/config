@@ -13,7 +13,7 @@ set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:CozetteVector 9
+font pango:BigBlue_TerminalPlus Nerd Font 9
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -75,7 +75,7 @@ bindsym $mod+o split h
 
 
 #rofi launch
-bindsym $mod+d exec rofi -show drun -modi drun -hide-scrollbar -width 10 -location 1 -show-icons -font "CozetteVector 9" -matching fuzzy
+bindsym $mod+d exec rofi -show drun -modi drun -hide-scrollbar -width 7 -location 1 -show-icons -font "Scientifica 8" -matching fuzzy -drun-display-format {name}
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -159,7 +159,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+Shift+Return exec "termite -c /home/dennis/.config/termite/lightmodeconfig"
 
 #default border
-default_border normal 2
+default_border normal 0
 
 #space from edges of screen
 gaps outer 10
@@ -168,7 +168,7 @@ gaps outer 10
 default_floating_border normal
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #333333 #222222 #84ED11 #292d2e   #222222
+client.focused          #333333 #222222 #84ED11 #292d2e   #404040
 client.focused_inactive #333333 #222222 #ffffff #484e50   #222222
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -216,12 +216,12 @@ bindsym $mod+r mode "resize"
 
 bar {
     #font pango: CozetteVector 9
+    #font pango: Curie, Cozette 9
     font pango: Curie, Cozette 9
     height 20
     status_command i3blocks
     workspace_buttons yes
-    #position top
-    position bottom
+    position top
     tray_output primary
     tray_padding 0
    #separator_symbol " ┊ "
@@ -231,10 +231,11 @@ bar {
 	colors
 	{
 	
-	#background #021A32
-	background #000716
+	#background #090909
+	#background #000716
+    background  #073E67
 	#this is orange#focused_workspace #CC6C00 #000000 #CC6C00
-	focused_workspace  #FFFF00 #031528 #FFFF00
+	focused_workspace  #FFFF00 #000A1A #FFFF00
 	inactive_workspace  #04284C #456079 #04284C
 
 	}
@@ -258,8 +259,7 @@ exec dunst
 #Custom keyboard layout
 exec --no-startup-id "xmodmap -e 'keycode 94 = Super_L'"
 exec sleep 2;
-exec --no-startup-id "xmodmap -e 'keycode 108 = backslash'"
+exec_always --no-startup-id "xmodmap -e 'keycode 108 = backslash'"
 exec sleep 2;
-exec feh --bg-scale /home/dennis/pictures/coolImages/jellyfishDeepArch.jpg
-exec conky
+exec_always feh --bg-fill /home/dennis/pictures/coolImages/gradientBlueJellyfishBurned.png
 

@@ -1,6 +1,6 @@
 * {
     text-color:                  #f2f2f2;
-    background-color:            #003d4d;
+    background-color:            #073B62;
     lightbg:                     #532c30;
     red:                         #f15d22;
     orange:                      #faa41a; 
@@ -58,6 +58,8 @@
 #element {
     border: 5;
     orientation: vertical;
+    padding: 8px;
+    highlight: bold;
 }
 
 #element-icon {

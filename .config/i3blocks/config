@@ -25,6 +25,14 @@ LABEL=CPU ✹:
 #CRIT_PERCENT=80
 #DECIMALS=2
 
+[bandwidth]
+command=$SCRIPT_DIR/bandwidth
+interval=5
+#INTERFACE=eth0
+INLABEL=Down: 
+OUTLABEL=/ Up: 
+#TREAT_UNKNOWN_AS_UP=0
+
 [batterybar]
 command=$SCRIPT_DIR/batterybar
 label=Bat 🔋: 

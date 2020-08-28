@@ -45,4 +45,3 @@ export APACHE_HOME=/usr/local/Apache
 
 
 /home/dennis/scripts/bashinfo/bashinfo.sh
-#neofetch
