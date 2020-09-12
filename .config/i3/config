@@ -163,7 +163,8 @@ default_border normal 0
 
 #space from edges of screen
 gaps outer 10
-gaps inner 0
+#space from one window to another
+gaps inner 10
 
 ###enable floating windows to have titles
 default_floating_border normal
@@ -220,6 +221,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
+	i3bar_command i3bar --transparency
     #font pango: CozetteVector 9
     #font pango: Curie, Cozette 9
     font pango: Curie, Cozette 9
@@ -233,12 +235,11 @@ bar {
    #separator_symbol " 🮌 "
     separator_symbol "  ·  "
 	
-	colors
+    colors
 	{
 	
 	#background #090909
-	#background #000716
-    background  #073E67
+	background #00000000
 	#this is orange#focused_workspace #CC6C00 #000000 #CC6C00
 	focused_workspace  #FFFF00 #000A1A #FFFF00
 	inactive_workspace  #04284C #456079 #04284C
@@ -247,8 +248,6 @@ bar {
 
 }
 
-exec --no-startup-id "setxkbmap -layout gb,gr -option 'grp:alt_shift_toggle'"
-exec --no-startup-id "setxkbmap -option caps:backspace"
 exec xsetroot -cursor_name left_ptr
 exec picom
 exec udiskie --tray
@@ -259,9 +258,8 @@ exec blueman-tray
 exec birdtray
 exec xfce4-power-manager
 exec dunst
-#Custom keyboard layout
-exec --no-startup-id "xmodmap -e 'keycode 94 = Super_L'"
-exec_always --no-startup-id "xmodmap -e 'keycode 108 = backslash'"
 #setting background
 exec_always --no-startup-id exec bash $HOME/.fehbg 
+#Custom keyboard layout
+exec /home/dennis/.keyboardSetup
 
