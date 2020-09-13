@@ -189,7 +189,7 @@ for_window [title="Customize Look and Feel"] floating enable
 bindcode 71 exec firefox
 bindcode 72 exec arandr
 
-#Ppl say this prevents some problems with the gaps (it does weirdly enough) 
+#this prevents some problems with the gaps
 for_window [class=".*"] border pixel 0
 hide_edge_borders both
 
@@ -224,11 +224,11 @@ bar {
 	i3bar_command i3bar --transparency
     #font pango: CozetteVector 9
     #font pango: Curie, Cozette 9
-    font pango: Curie, Cozette 9
+    font pango: Scientifica, Cozette 8
     height 20
     status_command i3blocks
     workspace_buttons yes
-    position top
+    position bottom
     tray_output primary
     tray_padding 0
    #separator_symbol " ┊ "
