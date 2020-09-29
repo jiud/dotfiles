@@ -16,9 +16,11 @@ alias light='sudo ~/scripts/bright_change.sh' #alias for brightness change
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles_git_backup/ --work-tree=$HOME' #easily manage dotfiles
 alias logoff='killall i3' #alias for logging out
 alias untar='tar -zxvf' #extract tar file to current directory quickly 
-alias dots='cd /home/dennis/.config/' #quickly tweak things
+alias dots='cd ~/.config/' #quickly tweak things
 alias vim='nvim' #replacing vim with nvim
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' #making ranger dump you in the directory you exit from!
+alias update='echo -e "\033[1;33m" && curl -s https://www.archlinux.org/feeds/news/ | xmllint --xpath //item/title\ \|\ //item/pubDate /dev/stdin | sed "s/\(<title\|<\/title>\|<pubDate>\|<\/pubDate>\)//g" | head -n 6 | sed "s/+0000//g" && echo -e "\033[0m" && echo -e "\n\033[1;33m***\033[0m Performing \033[1;33mFULL SYSTEM UPGRADE\033[0m, check for \033[0;31mMANUAL INTERVENTION\033[0m on the news ↑ \033[1;33m***\033[0m\n" && yay -Syu'
+#^^^ Command to update but print arch news for needing manual interferance etc on top^^^
 
 #PS1='[\u@\h \W]\$ '
 #PS1='[\u@\h \W]\$ 'i
@@ -44,4 +46,4 @@ export CLASSPATH=/usr/share/poi-4.1.2/poi-4.1.2.jar:/usr/share/poi-4.1.2/poi-oox
 export APACHE_HOME=/usr/local/Apache
 
 
-/home/dennis/scripts/bashinfo/bashinfo.sh
+~/scripts/bashinfo/bashinfo.sh
