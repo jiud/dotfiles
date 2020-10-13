@@ -75,7 +75,7 @@ command=systemctl suspend
 [lock]
 full_text="Lock "
 align=center
-command=i3lock-fancy -f 'scientifica' -t 'DO NOT UNLOCK THIS PLEASE GOD'
+command=i3-msg -q exec "~/scripts/lockScreen.sh"
 
 [xkb_layout]
 command=$SCRIPT_DIR/xkb_layout

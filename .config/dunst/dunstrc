@@ -27,7 +27,7 @@ browser = /usr/bin/firefox -new-tab
 always_run_script = true
 title = Dunst
 class = Dunst
-font = "CozetteVector 9"
+font = "Cozette 9"
 
 [shortcuts]
 close = ctrl+space

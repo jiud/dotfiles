@@ -53,7 +53,7 @@
     border:       2px 0px 0px ;
     padding:      2px 0px 0px ;
     text-color: @separatorcolor;
-    columns: 1;
+    columns: 3;
 }
 #element {
     border: 5;
