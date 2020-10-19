@@ -27,7 +27,7 @@ font pango:BigBlue_TerminalPlus Nerd Font 9
 
 #OLD~~~> #exec --no-startup-id xss-lock --transfer-sleep-lock --norifier=/usr/share/doc/xss-lock/dim-screen.sh.  -- ~/scripts/lockScreen.sh 
 exec xscreensaver -no-splash
-exec --no-startup-id xss-lock --transfer-sleep-lock -- xscreensaver-command -lock
+exec --no-startup-id xss-lock -- ~/scripts/lockScreen.sh 
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
