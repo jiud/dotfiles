@@ -33,11 +33,11 @@ font:
   # Normal (roman) font face
   normal:
   
-    family: Inconsolata
+    family: "Fantasque Sans Mono"
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
-  size: 11.0
+    style: Regular
+  size: 10
 
   # Bold font face
   bold:
@@ -45,11 +45,11 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Inconsolata
+    family: "Fantasque Sans Mono"
 
     # The `style` can be specified to pick a specific face.
-    style: Black
-  size: 11.0
+    style: Bold
+  size: 10
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:

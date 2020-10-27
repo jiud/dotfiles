@@ -49,6 +49,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "gruvbox theme
 Plug 'morhetz/gruvbox'
 
+"nord theme
+Plug 'arcticicestudio/nord-vim'
+
 "color color codes
 Plug 'chrisbra/Colorizer'
 
@@ -77,9 +80,12 @@ call plug#end()
 """
 """
 
+"True colors on
+set termguicolors
 
-set background=dark
-colorscheme gruvbox
+"set background=dark
+"colorscheme gruvbox
+colorscheme nord
 
 highlight Cursor guifg=white guibg=black
 
