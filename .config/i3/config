@@ -26,8 +26,9 @@ font pango:BigBlue_TerminalPlus Nerd Font 9
 # screen before suspend. Use loginctl lock-session to lock your screen.
 
 #OLD~~~> #exec --no-startup-id xss-lock --transfer-sleep-lock --norifier=/usr/share/doc/xss-lock/dim-screen.sh.  -- ~/scripts/lockScreen.sh 
-exec xscreensaver -no-splash
-exec --no-startup-id xss-lock -- ~/scripts/lockScreen.sh 
+#exec xscreensaver -no-splash
+exec xset s 300 5
+exec xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -231,11 +232,11 @@ bar {
 	i3bar_command i3bar --transparency
     #font pango: CozetteVector 9
     #font pango: Curie, Cozette 9
-    font pango: Scientifica, Cozette 8
+    font pango: scientifica, Cozette 9
     height 20
     status_command i3blocks
     workspace_buttons yes
-    position top
+    position bottom
     tray_output primary
     tray_padding 0
    #separator_symbol " ┊ "

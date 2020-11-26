@@ -17,17 +17,18 @@ alignment = left
 show_age_threshold = 60
 word_wrap = yes
 ignore_newline = no
-stack_duplicates = false
+stack_duplicates = true
 hide_duplicate_count = yes
-show_indicators = no
+show_indicators = yes
 icon_position = off
+allow_markup = yes
 sticky_history = yes
 history_length = 20
-browser = /usr/bin/firefox -new-tab
+browser = /usr/bin/brave -new-tab
 always_run_script = true
 title = Dunst
 class = Dunst
-font = "Cozette 9"
+font = "Montserrat Medium 10"
 
 [shortcuts]
 close = ctrl+space

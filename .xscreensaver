@@ -1,10 +1,10 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-demo 5.44 for dennis on Thu Nov  5 15:12:29 2020.
+# Written by xscreensaver-demo 5.44 for dennis on Fri Nov 20 01:06:00 2020.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
 cycle:		0:10:00
-lock:		True
+lock:		False
 lockTimeout:	0:05:00
 passwdTimeout:	0:00:30
 visualID:	default
@@ -24,7 +24,7 @@ fadeTicks:	20
 captureStderr:	True
 ignoreUninstalledPrograms:False
 font:		*-medium-r-*-140-*-m-*
-dpmsEnabled:	True
+dpmsEnabled:	False
 dpmsQuickOff:	False
 dpmsStandby:	0:15:00
 dpmsSuspend:	0:16:00
@@ -34,7 +34,7 @@ grabVideoFrames:    True
 chooseRandomImages: False
 imageDirectory:	/home/dennis/media/pictures/coolImages
 
-mode:		random-same
+mode:		random
 selected:	169
 
 textMode:	file
@@ -142,7 +142,7 @@ programs:								      \
 -				webcollage -root			    \n\
 -				xflame -root				    \n\
 -				xmatrix -root				    \n\
-  GL: 				gflux -root				    \n\
+- GL: 				gflux -root				    \n\
 -				nerverot -root				    \n\
 -				xrayswarm -root				    \n\
 -				xspirograph -root			    \n\

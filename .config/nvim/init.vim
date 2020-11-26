@@ -52,6 +52,9 @@ Plug 'morhetz/gruvbox'
 "nord theme
 Plug 'arcticicestudio/nord-vim'
 
+"dracula theme
+Plug 'dracula/vim', { 'as': 'dracula' }
+
 "color color codes
 Plug 'chrisbra/Colorizer'
 
@@ -83,9 +86,10 @@ call plug#end()
 "True colors on
 set termguicolors
 
-"set background=dark
+set background=dark
 "colorscheme gruvbox
-colorscheme nord
+"colorscheme nord
+colorscheme dracula 
 
 highlight Cursor guifg=white guibg=black
 
@@ -123,6 +127,9 @@ map <C-n> :NERDTreeToggle<CR>
 """
 "paste without yanking
 vnoremap p "_dP
+"x is blackhole register so deleted things dont get yanked
+vnoremap x "_x
+
 
 """
 """ indentLine SETTINGS
