@@ -32,7 +32,7 @@ git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="\[\033[32m\]╭─\[\033[34;1m\]  \[\033[00m\]\u \[\033[33m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[32m\]╰──👉 \$ \[\033[00m\]"
+export PS1="\[\033[32m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[33m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[32m\]╰──  \$ \[\033[00m\]"
 
 export EDITOR=nvim
 
@@ -56,7 +56,6 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 #Exporting lang
 export LANG='en_GB.UTF-8'
 
-source <(kitty + complete setup bash)
 
 ~/scripts/bashinfo/bashinfo.sh
 todo
