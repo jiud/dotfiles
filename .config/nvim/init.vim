@@ -305,3 +305,8 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+"disable conceal in latex
+"let g:tex_conceal = ""
+"disable conceal everywhere
+set conceallevel=0

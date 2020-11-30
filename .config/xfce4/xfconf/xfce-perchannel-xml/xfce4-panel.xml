@@ -68,6 +68,8 @@
       <property name="show-frame" type="bool" value="false"/>
       <property name="square-icons" type="bool" value="false"/>
       <property name="names-ordered" type="array">
+        <value type="string" value="kazam"/>
+        <value type="string" value="vlc"/>
         <value type="string" value="electrum"/>
         <value type="string" value="steam"/>
         <value type="string" value="birdtray"/>

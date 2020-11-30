@@ -11,6 +11,7 @@ HISTCONTROL=ignoredups:erasedups
 shopt -s histappend
 
 alias ls='lsd' #alias for lsd
+alias rm='echo -e "\033[1;33mPermanent removal avoided\033[00m: Use trash-put instead please, or prepend \"rm\" with \"\\\""; false' #using trash-put is safer in the long run
 alias lock='~/.config/genmon/Lock.sh' #alias for locking pc
 alias light='sudo ~/scripts/bright_change.sh' #alias for brightness change
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' #easily manage dotfiles
