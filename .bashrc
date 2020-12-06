@@ -20,7 +20,7 @@ alias untar='tar -zxvf' #extract tar file to current directory quickly
 alias dots='cd ~/.config/' #quickly tweak things
 alias vim='nvim' #replacing vim with nvim
 alias f='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' #making ranger dump you in the directory you exit from!
-alias dup='kitty & disown $!' #start another window in the current dir and disown it
+alias dup='xfce4-terminal & disown $!' #start another window in the current dir and disown it
 alias cleanup='pacman -Qdtq > pkgsForCleanup' # list potentially unneeded packages in a file, actually remove them with 'cat pkgs | pacman -Rns -' 
 alias update='echo -e "\033[1;33m" && curl -s https://www.archlinux.org/feeds/news/ | xmllint --xpath //item/title\ \|\ //item/pubDate /dev/stdin | sed "s/\(<title\|<\/title>\|<pubDate>\|<\/pubDate>\)//g" | head -n 6 | sed "s/+0000//g" && echo -e "\033[0m" && echo -e "\n\033[1;33m***\033[0m Performing \033[1;33mFULL SYSTEM UPGRADE\033[0m, check for \033[0;31mMANUAL INTERVENTION\033[0m on the news ↑ \033[1;33m***\033[0m\n" && yay -Syu'
 #^^^ Command to update but print arch news for needing manual interferance etc on top^^^
@@ -30,10 +30,10 @@ alias update='echo -e "\033[1;33m" && curl -s https://www.archlinux.org/feeds/ne
 
 #making a function to display git branch on PS1 
 git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
 }
 
-export PS1="\[\033[32m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[33m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[32m\]╰──  \$ \[\033[00m\]"
+export PS1="\[\033[33m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[32m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[33m\]╰──  \$ \[\033[00m\]"
 
 export EDITOR=nvim
 
@@ -55,7 +55,7 @@ export PYTHONPATH=${PYTHONPATH}:~/.local/bin/
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 #Exporting lang
-export LANG='en_GB.UTF-8'
+export LANG='en_US.UTF-8'
 
 
 ~/scripts/bashinfo/bashinfo.sh

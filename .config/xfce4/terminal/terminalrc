@@ -29,7 +29,9 @@ MiscSearchDialogOpacity=100
 MiscShowUnsafePasteDialog=TRUE
 CellHeightScale=1.400000
 BackgroundImageFile=/home/dennis/media/pictures/coolImages/art/by_procession_1920.jpg
-ColorPalette=#000000000000;#ffff00000000;#3333ffff0000;#ffff00009999;#00006666ffff;#cccc0000ffff;#0000ffffffff;#d0d0d0d0d0d0;#808080808080;#ffff00000000;#3333ffff0000;#ffff00009999;#00006666ffff;#cccc0000ffff;#0000ffffffff;#ffffffffffff
-ColorUseTheme=TRUE
 FontAllowBold=FALSE
+ColorForeground=#ffffffffffff
+ColorBackground=#000000000000
+ColorPalette=rgb(0,0,0);rgb(247,21,21);rgb(47,151,46);rgb(255,255,0);rgb(89,92,246);rgb(240,10,240);rgb(0,205,205);rgb(229,229,229);rgb(102,102,102);rgb(235,30,30);rgb(48,157,47);rgb(255,255,0);rgb(111,98,253);rgb(239,24,239);rgb(0,255,255);rgb(255,255,255)
+ColorUseTheme=TRUE
 
