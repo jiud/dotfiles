@@ -55,6 +55,9 @@ Plug 'arcticicestudio/nord-vim'
 "dracula theme
 Plug 'dracula/vim', { 'as': 'dracula' }
 
+"spaceduck theme
+Plug 'pineapplegiant/spaceduck'
+
 "color color codes
 Plug 'chrisbra/Colorizer'
 
