@@ -64,7 +64,7 @@ Plug 'chrisbra/Colorizer'
 "IF SPACES ARE INDENTS
 "make space indents have characters
 Plug 'Yggdroot/indentLine'
-
+Plug 'tomasiser/vim-code-dark'
 "really cool status bar 
 Plug 'vim-airline/vim-airline'
 
@@ -74,9 +74,10 @@ Plug 'vim-airline/vim-airline-themes'
 "highlight html-like tags
 Plug 'Valloric/MatchTagAlways'
 
-"devicons in nertree and ailine
+"devicons in nerdtree and airline
 "ALWAYS LOAD LAST 
 Plug 'ryanoasis/vim-devicons'
+
 
 call plug#end()
 
@@ -92,7 +93,9 @@ set termguicolors
 set background=dark
 "colorscheme gruvbox
 "colorscheme nord
-colorscheme dracula 
+"colorscheme dracula 
+colorscheme codedark 
+
 
 highlight Cursor guifg=white guibg=black
 

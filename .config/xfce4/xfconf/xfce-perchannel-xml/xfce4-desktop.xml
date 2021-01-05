@@ -148,7 +148,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="3"/>
-          <property name="last-image" type="string" value="/home/dennis/media/pictures/coolImages/art/10.jpg"/>
+          <property name="last-image" type="string" value="/home/dennis/media/pictures/coolImages/art/dinojungl.jpg"/>
           <property name="rgba1" type="array">
             <value type="double" value="0.333333"/>
             <value type="double" value="0.341176"/>
@@ -161,6 +161,7 @@
             <value type="double" value="0.211765"/>
             <value type="double" value="1.000000"/>
           </property>
+          <property name="backdrop-cycle-enable" type="bool" value="false"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
