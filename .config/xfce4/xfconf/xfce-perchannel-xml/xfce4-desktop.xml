@@ -215,7 +215,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="3"/>
-          <property name="last-image" type="string" value="/home/dennis/media/pictures/coolImages/art/by_localservers2_2560.jpg"/>
+          <property name="last-image" type="string" value="/home/dennis/media/pictures/coolImages/art/ocean2.jpg"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -243,7 +243,7 @@
     <property name="single-workspace-number" type="int" value="0"/>
   </property>
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="619"/>
+    <property name="window-width" type="int" value="638"/>
     <property name="window-height" type="int" value="674"/>
   </property>
   <property name="desktop-icons" type="empty">

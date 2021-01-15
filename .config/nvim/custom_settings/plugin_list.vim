@@ -25,6 +25,9 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 "spaceduck theme
 Plug 'pineapplegiant/spaceduck'
 
+"many themes lmao
+Plug 'gmist/vim-palette'
+
 "color color codes
 Plug 'chrisbra/Colorizer'
 

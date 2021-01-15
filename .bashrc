@@ -57,6 +57,8 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 #Exporting lang
 export LANG='en_US.UTF-8'
 
+#Stopping Control-Q and Control-S from annoying me 
+stty -ixon
 
 ~/scripts/bashinfo/bashinfo.sh
 todo

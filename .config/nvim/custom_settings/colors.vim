@@ -7,10 +7,7 @@
 set termguicolors
 
 set background=dark
-"colorscheme gruvbox
-"colorscheme nord
-"colorscheme dracula 
-colorscheme codedark 
+colorscheme minimalist 
 
 
 highlight Cursor guifg=white guibg=black
