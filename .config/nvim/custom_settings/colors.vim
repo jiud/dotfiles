@@ -7,8 +7,8 @@
 set termguicolors
 
 set background=dark
-colorscheme minimalist 
 
+colorscheme spaceduck 
 
 highlight Cursor guifg=white guibg=black
 

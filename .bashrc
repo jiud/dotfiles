@@ -33,11 +33,13 @@ git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
 }
 
-export PS1="\[\033[33m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[32m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[33m\]╰── \$  \[\033[00m\]"
+export PS1="\[\033[33m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[32m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[33m\]╰──  \$ \[\033[00m\]"
 
 export EDITOR=nvim
 
 export PF_INFO="os kernel uptime pkgs memory"
+export PF_SEP=":"
+export PF_COL2=3
 
 #antialias fonts in java apps
 #export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'

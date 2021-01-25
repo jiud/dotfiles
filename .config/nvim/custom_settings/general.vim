@@ -20,6 +20,8 @@ set showcmd
 set nowrap
 set number
 
+"set mouse controls on
+set mouse=a
 "enable for showing spaces
 "set list
 

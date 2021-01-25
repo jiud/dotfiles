@@ -2,11 +2,13 @@
 update_info=filepicker.upd:filepicker-remove-old-previews-entry,fonts_global.upd:Fonts_Global,fonts_global_toolbar.upd:Fonts_Global_Toolbar,icons_remove_effects.upd:IconsRemoveEffects,kwin.upd:animation-speed,style_widgetstyle_default_breeze.upd:StyleWidgetStyleDefaultBreeze
 
 [ColorEffects:Disabled]
+ChangeSelectionColor=
 Color=56,56,56
 ColorAmount=0
 ColorEffect=0
 ContrastAmount=0.65
 ContrastEffect=1
+Enable=
 IntensityAmount=0.1
 IntensityEffect=2
 
@@ -49,9 +51,23 @@ ForegroundNormal=239,240,241
 ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
+[Colors:Header]
+BackgroundAlternate=77,77,77
+BackgroundNormal=49,54,59
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=189,195,199
+ForegroundLink=41,128,185
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=239,240,241
+ForegroundPositive=39,174,96
+ForegroundVisited=127,140,141
+
 [Colors:Selection]
 BackgroundAlternate=29,153,243
-BackgroundNormal=61,174,233
+BackgroundNormal=35,102,135
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=252,252,252
@@ -105,8 +121,11 @@ ForegroundNormal=239,240,241
 ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
+[DirSelect Dialog]
+DirSelectDialog Size=868,596
+
 [General]
-ColorScheme=BreezeDark
+ColorScheme=BreezeDarkSelectedBetter
 Name=Breeze Dark
 XftAntialias=true
 XftHintStyle=hintslight
@@ -125,6 +144,7 @@ AnimationDurationFactor=0.5
 ColorScheme=Breeze
 LookAndFeelPackage=org.kde.breezedark.desktop
 contrast=4
+widgetStyle=Oxygen
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -143,7 +163,7 @@ Sort by=Name
 Sort directories first=true
 Sort reversed=false
 Speedbar Width=162
-View Style=DetailTree
+View Style=Simple
 
 [Shortcuts]
 FullScreen=

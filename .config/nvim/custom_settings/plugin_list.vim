@@ -34,7 +34,7 @@ Plug 'chrisbra/Colorizer'
 "IF SPACES ARE INDENTS
 "make space indents have characters
 Plug 'Yggdroot/indentLine'
-Plug 'tomasiser/vim-code-dark'
+
 "really cool status bar 
 Plug 'vim-airline/vim-airline'
 

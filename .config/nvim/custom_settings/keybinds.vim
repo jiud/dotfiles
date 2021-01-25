@@ -7,3 +7,7 @@
 :command Wq wq
 :command W w
 :command Q q
+
+""For buffers 
+map <C-J> :bnext<CR>
+map <C-K> :bprev<CR>

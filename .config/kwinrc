@@ -16,6 +16,10 @@ Name_4=Writing
 Number=4
 Rows=4
 
+[Effect-Blur]
+BlurStrength=9
+NoiseStrength=0
+
 [Effect-Cube]
 BorderActivateCylinder=3
 
@@ -30,9 +34,17 @@ SlideBackground=false
 TopLeft=None
 
 [Plugins]
+blurEnabled=true
+forceblurEnabled=true
 kwin4_effect_squashEnabled=false
 magiclampEnabled=true
+minimizeallEnabled=false
+synchronizeskipswitcherEnabled=false
+videowallEnabled=false
 wobblywindowsEnabled=true
+
+[Script-forceblur]
+patterns=alacritty\nkitty
 
 [SubSession: b9467071-3718-4353-b90c-5d681de9ce1a]
 active=-1
@@ -52,3 +64,5 @@ FocusPolicy=FocusFollowsMouse
 BorderSize=None
 BorderSizeAuto=false
 ButtonsOnRight=IAX
+library=org.kde.oxygen
+theme=Oxygen

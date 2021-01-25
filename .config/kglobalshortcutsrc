@@ -28,11 +28,13 @@ _k_friendly_name=Touchpad
 [kded5]
 Show System Activity=Ctrl+Esc,Ctrl+Esc,Show System Activity
 _k_friendly_name=KDE Daemon
-display=Display\tMeta+P,Display\tMeta+P,Switch Display
+display=Display\t,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
+{22216769-1336-43d9-ab4f-23af60cb1f61}=,none,Alacritty
 {32ace780-e89e-4f5c-af51-44d6fe1ece06}=Ctrl+Alt+T,none,Launch Konsole
+{808cb5d3-6391-4143-890c-e29513e3ee4c}=Meta+Return,none,Kitty
 {c73c6ef9-3cec-4d17-a4ff-2411dd48899d}=Meta+D,none,Rofi
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Alt+M,none,Search
 
@@ -168,7 +170,7 @@ Window Resize=none,none,Resize Window
 Window Shade=none,none,Shade Window
 Window Shrink Horizontal=none,none,Pack Shrink Window Horizontally
 Window Shrink Vertical=none,none,Pack Shrink Window Vertically
-Window to Desktop 1=none,none,Window to Desktop 1
+Window to Desktop 1=Meta+1,none,Window to Desktop 1
 Window to Desktop 10=none,none,Window to Desktop 10
 Window to Desktop 11=none,none,Window to Desktop 11
 Window to Desktop 12=none,none,Window to Desktop 12
@@ -179,10 +181,10 @@ Window to Desktop 16=none,none,Window to Desktop 16
 Window to Desktop 17=none,none,Window to Desktop 17
 Window to Desktop 18=none,none,Window to Desktop 18
 Window to Desktop 19=none,none,Window to Desktop 19
-Window to Desktop 2=none,none,Window to Desktop 2
+Window to Desktop 2=Meta+2,none,Window to Desktop 2
 Window to Desktop 20=none,none,Window to Desktop 20
-Window to Desktop 3=none,none,Window to Desktop 3
-Window to Desktop 4=none,none,Window to Desktop 4
+Window to Desktop 3=Meta+3,none,Window to Desktop 3
+Window to Desktop 4=Meta+4,none,Window to Desktop 4
 Window to Desktop 5=none,none,Window to Desktop 5
 Window to Desktop 6=none,none,Window to Desktop 6
 Window to Desktop 7=none,none,Window to Desktop 7
@@ -214,15 +216,17 @@ playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
-[org.kde.konsole.desktop]
-NewTab=,,Open a New Tab
-NewWindow=,,Open a New Window
-_k_friendly_name=Konsole
-_launch=Alt+Return,,Konsole
-
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
 _launch=Meta+.,Meta+.,Emoji Selector
+
+[org.kde.spectacle.desktop]
+ActiveWindowScreenShot=Meta+Print,Meta+Print,Capture Active Window
+CurrentMonitorScreenShot=,none,Capture Current Monitor
+FullScreenScreenShot=Shift+Print,Shift+Print,Capture Entire Desktop
+RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangular Region
+_k_friendly_name=Spectacle
+_launch=Print,Print,Launch Spectacle
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -239,11 +243,11 @@ _k_friendly_name=Power Management
 
 [plasmashell]
 _k_friendly_name=Plasma
-activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
+activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=,Meta+0,Activate Task Manager Entry 10
-activate task manager entry 2=Meta+2,Meta+2,Activate Task Manager Entry 2
-activate task manager entry 3=Meta+3,Meta+3,Activate Task Manager Entry 3
-activate task manager entry 4=Meta+4,Meta+4,Activate Task Manager Entry 4
+activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2
+activate task manager entry 3=none,Meta+3,Activate Task Manager Entry 3
+activate task manager entry 4=none,Meta+4,Activate Task Manager Entry 4
 activate task manager entry 5=Meta+5,Meta+5,Activate Task Manager Entry 5
 activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
