@@ -41,6 +41,9 @@ Plug 'vim-airline/vim-airline'
 "themes for airline
 Plug 'vim-airline/vim-airline-themes'
 
+"git indicators for vim
+Plug 'airblade/vim-gitgutter'
+
 "highlight html-like tags
 Plug 'Valloric/MatchTagAlways'
 

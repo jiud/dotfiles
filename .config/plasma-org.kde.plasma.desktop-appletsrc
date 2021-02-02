@@ -33,8 +33,10 @@ ToolBoxButtonX=647
 sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
+Blur=true
+Color=4,5,7
 FillMode=0
-Image=file:///usr/share/wallpapers/DarkestHour/contents/images/2560x1600.jpg
+Image=file:///home/dennis/media/pictures/coolImages/life-underwater.png
 SlidePaths=/usr/share/wallpapers
 
 [Containments][1][Wallpaper][org.kde.potd][General]
@@ -237,7 +239,7 @@ immutability=1
 plugin=org.kde.plasma.colorpicker
 
 [Containments][66][Applets][69][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 
 [Containments][66][ConfigDialog]
 DialogHeight=540
@@ -266,14 +268,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=82
+PreloadWeight=92
 
 [Containments][8][Applets][11]
 immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=47
+PreloadWeight=62
 
 [Containments][8][Applets][12]
 immutability=1
@@ -287,7 +289,7 @@ immutability=1
 plugin=org.kde.plasma.nightcolorcontrol
 
 [Containments][8][Applets][13][Configuration]
-PreloadWeight=42
+PreloadWeight=47
 
 [Containments][8][Applets][14]
 immutability=1
@@ -325,7 +327,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][38][Configuration]
-PreloadWeight=4
+PreloadWeight=0
 
 [Containments][8][Applets][41]
 immutability=1
@@ -355,6 +357,10 @@ plugin=org.kde.plasma.volume
 [Containments][8][Applets][9][Configuration]
 PreloadWeight=100
 
+[Containments][8][Applets][9][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][8][ConfigDialog]
 DialogHeight=743
 DialogWidth=1028
@@ -375,3 +381,4 @@ history=#07062c,#272447
 
 [ScreenMapping]
 itemsOnDisabledScreens=
+screenMapping=
