@@ -2,3 +2,29 @@ ls
 ls la
 ls -la
 exit
+ls
+ls -lsa
+ls -la
+ls 
+ls
+pm2 list
+git pull
+ls
+cd ..
+ls
+cd cms-promo/
+ls
+ls
+ls -1
+lsd
+pm2 list
+pm2 stop 0
+pm2 list
+pm2 list
+│4   │ YEM_MTN_Millionaires                   │ default     │ 1.0.0   │ fork    │ 0        │ 0      │ 0    │ stopped   │ 0%       │ 0b       │ dennis   │ disabled │
+clear
+clear
+ls
+ls
+clear
+exit

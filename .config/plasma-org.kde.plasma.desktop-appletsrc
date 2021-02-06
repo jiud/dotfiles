@@ -7,7 +7,7 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [AppletGlobals][org.kde.plasma.comic]
-lastUpdate=2021,1,22,22,32,17
+lastUpdate=2021,2,3,23,53,49
 updateInterval=3
 
 [Containments][1]
@@ -35,8 +35,7 @@ sortMode=-1
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
 Color=4,5,7
-FillMode=0
-Image=file:///home/dennis/media/pictures/coolImages/life-underwater.png
+Image=file:///home/dennis/media/pictures/coolImages/grey_mountain_2.jpeg
 SlidePaths=/usr/share/wallpapers
 
 [Containments][1][Wallpaper][org.kde.potd][General]
@@ -178,8 +177,13 @@ plugin=org.kde.plasma.icontasks
 [Containments][3][Applets][6][Configuration]
 PreloadWeight=42
 
+[Containments][3][Applets][6][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
 [Containments][3][Applets][6][Configuration][General]
 launchers=
+maxStripes=1
 
 [Containments][3][Applets][63]
 immutability=1
@@ -197,8 +201,8 @@ PreloadWeight=100
 SystrayContainmentId=8
 
 [Containments][3][ConfigDialog]
-DialogHeight=1200
-DialogWidth=169
+DialogHeight=1080
+DialogWidth=152
 
 [Containments][3][Configuration]
 PreloadWeight=42
@@ -239,7 +243,10 @@ immutability=1
 plugin=org.kde.plasma.colorpicker
 
 [Containments][66][Applets][69][Configuration]
-PreloadWeight=60
+PreloadWeight=65
+
+[Containments][66][Applets][69][Configuration][General]
+history=#282c34
 
 [Containments][66][ConfigDialog]
 DialogHeight=540
@@ -268,14 +275,10 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=92
-
-[Containments][8][Applets][11]
-immutability=1
-plugin=org.kde.plasma.devicenotifier
+PreloadWeight=100
 
 [Containments][8][Applets][11][Configuration]
-PreloadWeight=62
+PreloadWeight=42
 
 [Containments][8][Applets][12]
 immutability=1
@@ -291,12 +294,8 @@ plugin=org.kde.plasma.nightcolorcontrol
 [Containments][8][Applets][13][Configuration]
 PreloadWeight=47
 
-[Containments][8][Applets][14]
-immutability=1
-plugin=org.kde.plasma.notifications
-
 [Containments][8][Applets][14][Configuration]
-PreloadWeight=100
+PreloadWeight=42
 
 [Containments][8][Applets][15]
 immutability=1
@@ -355,11 +354,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][9][Configuration]
-PreloadWeight=100
-
-[Containments][8][Applets][9][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+PreloadWeight=47
 
 [Containments][8][ConfigDialog]
 DialogHeight=743
@@ -369,12 +364,19 @@ DialogWidth=1028
 PreloadWeight=42
 
 [Containments][8][General]
-extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds,org.kde.plasma.volume
+extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds,org.kde.plasma.battery,org.kde.plasma.volume
 knownItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds
 shownItems=org.kde.plasma.battery,org.kde.plasma.volume
 
 [Containments3Appletsts][6][Configuration][General]
 launchers=
+
+[Containments3Appletsts][74][Configuration][Appearance]
+aliasFontSize=33
+iconBottomMargin=19
+iconFontSize=12
+temperatureFontSize=45
+temperatureRightMargin=8
 
 [Containments66Appletsts][69][Configuration][General]
 history=#07062c,#272447

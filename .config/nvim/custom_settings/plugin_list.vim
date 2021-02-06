@@ -22,6 +22,9 @@ Plug 'arcticicestudio/nord-vim'
 "dracula theme
 Plug 'dracula/vim', { 'as': 'dracula' }
 
+"one theme
+Plug 'rakr/vim-one'
+
 "spaceduck theme
 Plug 'pineapplegiant/spaceduck'
 

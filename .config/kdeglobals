@@ -131,9 +131,11 @@ XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=Inconsolata [CYRE],10,-1,5,50,0,0,0,0,0
-font=Montserrat,10,-1,5,50,0,0,0,0,0
+font=Open Sans,8,-1,5,50,0,0,0,0,0
+menuFont=Open Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-toolBarFont=Montserrat,10,-1,5,50,0,0,0,0,0
+smallestReadableFont=Open Sans,8,-1,5,50,0,0,0,0,0
+toolBarFont=Manrope,11,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
@@ -172,7 +174,7 @@ FullScreen=
 FakeEntryToKeepThisGroup=true
 activeBackground=49,54,59
 activeBlend=255,255,255
-activeFont=Manrope Light,11,-1,5,25,0,0,0,0,0,Regular
+activeFont=Manrope,11,-1,5,57,0,0,0,0,0,Medium
 activeForeground=239,240,241
 inactiveBackground=49,54,59
 inactiveBlend=75,71,67

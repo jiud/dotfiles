@@ -8,7 +8,7 @@ set termguicolors
 
 set background=dark
 
-colorscheme minimalist
+colorscheme one
 
 highlight Cursor guifg=white guibg=black
 
