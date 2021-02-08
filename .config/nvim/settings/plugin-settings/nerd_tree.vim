@@ -1,8 +1,9 @@
-"""
-""" NERDTree SETTINGS
-"""
-"""
-
+""       _   __              ________             
+""      / | / /__  _________/ /_  __/_______  ___ 
+""     /  |/ / _ \/ ___/ __  / / / / ___/ _ \/ _ \
+""    / /|  /  __/ /  / /_/ / / / / /  /  __/  __/
+""   /_/ |_/\___/_/   \__,_/ /_/ /_/   \___/\___/ 
+""   
 
 "Open NERDtree automatically when no files are specified
 autocmd StdinReadPre * let s:std_in=1

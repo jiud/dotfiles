@@ -27,7 +27,10 @@ alias update='echo -e "\033[1;33m" && curl -s https://www.archlinux.org/feeds/ne
 alias work='cd ~/work'
 alias micro='cd ~/work/microsites'
 alias cms='cd ~/work/cms-promo'
+alias vimdots='cd ~/.config/nvim/'
 #^^^ aliases for bookmarking
+#Needed for intended terminal behevior on servers
+alias ssh="kitty +kitten ssh"
 
 #PS1='[\u@\h \W]\$ '
 #PS1='[\u@\h \W]\$ 'i

@@ -1,8 +1,9 @@
-""""
-""""
-""""  COC SETTINGS
-""""
-""""
+""     ______      ______
+""    / ____/___  / ____/
+""   / /   / __ \/ /     
+""  / /___/ /_/ / /___   
+""  \____/\____/\____/   
+""                      
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -144,8 +145,3 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-"disable conceal in latex
-"let g:tex_conceal = ""
-"disable conceal everywhere
-set conceallevel=0

@@ -1,11 +1,20 @@
-runtime custom_settings/plugin_list.vim
-runtime custom_settings/nerd_tree.vim
-runtime custom_settings/indentLine.vim
-runtime custom_settings/airline.vim
-runtime custom_settings/MatchTagAlways.vim
-runtime custom_settings/colors.vim
-runtime custom_settings/coc.vim
-runtime custom_settings/registers.vim
-runtime custom_settings/keybinds.vim
-runtime custom_settings/general.vim
-runtime custom_settings/devIcons.vim
+""       ____      _ __ 
+""      /  _/___  (_) /_
+""      / // __ \/ / __/
+""    _/ // / / / / /_  
+""   /___/_/ /_/_/\__/  
+""                      
+
+"Initializing standard neovim settings
+runtime settings/plugin_list.vim
+runtime settings/colors.vim
+runtime settings/registers.vim
+runtime settings/keybinds.vim
+runtime settings/general.vim
+"Initializing plugin settings
+runtime settings/plugin-settings/nerd_tree.vim
+runtime settings/plugin-settings/indentLine.vim
+runtime settings/plugin-settings/airline.vim
+runtime settings/plugin-settings/MatchTagAlways.vim
+runtime settings/plugin-settings/devIcons.vim
+runtime settings/plugin-settings/coc.vim

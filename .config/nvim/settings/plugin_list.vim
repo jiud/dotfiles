@@ -1,6 +1,9 @@
-"""
-""" LOADING PLUGINS
-"""
+""       ____  __            _           
+""      / __ \/ /_  ______ _(_)___  _____
+""     / /_/ / / / / / __ `/ / __ \/ ___/
+""    / ____/ / /_/ / /_/ / / / / (__  ) 
+""   /_/   /_/\__,_/\__, /_/_/ /_/____/  
+""                 /____/                
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -12,15 +15,6 @@ Plug  'jsit/vim-mustache-handlebars'
 
 "coc plugin, autocomplete and syntax checking
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-"gruvbox theme
-Plug 'morhetz/gruvbox'
-
-"nord theme
-Plug 'arcticicestudio/nord-vim'
-
-"dracula theme
-Plug 'dracula/vim', { 'as': 'dracula' }
 
 "one theme
 Plug 'rakr/vim-one'
@@ -60,7 +54,4 @@ Plug 'junegunn/goyo.vim'
 "ALWAYS LOAD LAST 
 Plug 'ryanoasis/vim-devicons'
 
-
 call plug#end()
-
-

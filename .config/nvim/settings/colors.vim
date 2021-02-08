@@ -1,7 +1,9 @@
-"""
-""" COLOR SETTINGS
-"""
-"""
+""      ______      __               
+""     / ____/___  / /___  __________
+""    / /   / __ \/ / __ \/ ___/ ___/
+""   / /___/ /_/ / / /_/ / /  (__  ) 
+""   \____/\____/_/\____/_/  /____/  
+""                                   
 
 "True colors on
 set termguicolors
@@ -12,7 +14,7 @@ colorscheme one
 
 highlight Cursor guifg=white guibg=black
 
-"ράδειγμα Enables cursor line position tracking:
+"Enables cursor line position tracking:
 set cursorline
 
 " Removes the underline causes by enabling cursorline:
