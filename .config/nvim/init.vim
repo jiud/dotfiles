@@ -8,3 +8,4 @@ runtime custom_settings/coc.vim
 runtime custom_settings/registers.vim
 runtime custom_settings/keybinds.vim
 runtime custom_settings/general.vim
+runtime custom_settings/devIcons.vim

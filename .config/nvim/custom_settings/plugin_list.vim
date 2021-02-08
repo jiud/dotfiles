@@ -50,6 +50,12 @@ Plug 'airblade/vim-gitgutter'
 "highlight html-like tags
 Plug 'Valloric/MatchTagAlways'
 
+"nice animation on scrolling
+Plug 'yuttie/comfortable-motion.vim'
+
+"Zen mode on vim
+Plug 'junegunn/goyo.vim' 
+
 "devicons in nerdtree and airline
 "ALWAYS LOAD LAST 
 Plug 'ryanoasis/vim-devicons'
