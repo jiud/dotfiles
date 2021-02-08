@@ -5,12 +5,12 @@
 ""   /_/ |_\___/\__, /_.___/_/_/ /_/\__,_/_/_/ /_/\__, /____/  
 ""             /____/                            /____/        
 
-" For misclicks
+"For misclicks
 :command WQ wq
 :command Wq wq
 :command W w
 :command Q q
 
-" For buffers 
+"For switching buffers 
 map <C-J> :bprev<CR>
 map <C-K> :bnext<CR>

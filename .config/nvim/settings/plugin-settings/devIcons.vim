@@ -5,6 +5,7 @@
 ""   \__,_/\___/|___/___/\___/\____/_/ /_/____/  
 ""                                               
 
+"Corrections on devicons size and appearance, credit Vim-Reaper
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_unite = 1
 let g:webdevicons_enable_denite = 1

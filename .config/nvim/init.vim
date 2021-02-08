@@ -12,7 +12,7 @@ runtime settings/registers.vim
 runtime settings/keybinds.vim
 runtime settings/general.vim
 "Initializing plugin settings
-runtime settings/plugin-settings/nerd_tree.vim
+runtime settings/plugin-settings/NerdTree.vim
 runtime settings/plugin-settings/indentLine.vim
 runtime settings/plugin-settings/airline.vim
 runtime settings/plugin-settings/MatchTagAlways.vim

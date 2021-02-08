@@ -7,5 +7,5 @@
 
 "Paste without yanking
 vnoremap p "_dP
-"X is blackhole register so deleted things dont get yanked
+"X is the 'blackhole' register so deleted things dont get yanked
 vnoremap x "_x
