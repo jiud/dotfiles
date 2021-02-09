@@ -1,6 +1,5 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-b9467071-3718-4353-b90c-5d681de9ce1a=none,none,Switch to activity "fsdf"
 switch-to-activity-f8212949-d13d-4b08-baeb-d9b9514c1325=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -36,8 +35,11 @@ display=Display\t,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
+{01d7c045-39ac-4d8c-9e48-73b537f4c5be}=none,none,Neovim
+{32ace780-e89e-4f5c-af51-44d6fe1ece06}=Ctrl+Alt+T,none,Launch Konsole
 {808cb5d3-6391-4143-890c-e29513e3ee4c}=Meta+Return,none,Kitty
 {c73c6ef9-3cec-4d17-a4ff-2411dd48899d}=Meta+D,none,Rofi
+{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Alt+M,none,Search
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -243,7 +245,7 @@ Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=Plasma
+_k_friendly_name=Activity switching
 activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2

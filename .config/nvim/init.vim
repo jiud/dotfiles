@@ -11,6 +11,7 @@ runtime settings/colors.vim
 runtime settings/registers.vim
 runtime settings/keybinds.vim
 runtime settings/general.vim
+runtime settings/syntax.vim
 "Initializing plugin settings
 runtime settings/plugin-settings/NerdTree.vim
 runtime settings/plugin-settings/indentLine.vim

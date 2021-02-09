@@ -10,37 +10,6 @@ RightButton;NoModifier=org.kde.contextmenu
 lastUpdate=2021,2,3,23,53,49
 updateInterval=3
 
-[Containments][1]
-ItemGeometriesHorizontal=
-activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][ConfigDialog]
-DialogHeight=878
-DialogWidth=640
-
-[Containments][1][Configuration]
-PreloadWeight=42
-
-[Containments][1][General]
-ToolBoxButtonState=topcenter
-ToolBoxButtonX=647
-sortMode=-1
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Blur=true
-Color=4,5,7
-Image=file:///home/dennis/media/pictures/coolImages/grey_mountain_2.jpeg
-SlidePaths=/usr/share/wallpapers
-
-[Containments][1][Wallpaper][org.kde.potd][General]
-FillMode=2
-
 [Containments][2]
 ItemGeometriesHorizontal=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
@@ -60,30 +29,6 @@ PreloadWeight=42
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Image=file:///usr/share/wallpapers/Next/contents/images/1280x1024.jpg
-
-[Containments][28]
-activityId=b9467071-3718-4353-b90c-5d681de9ce1a
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][28][Configuration]
-PreloadWeight=42
-
-[Containments][29]
-activityId=b9467071-3718-4353-b90c-5d681de9ce1a
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][29][Configuration]
-PreloadWeight=42
 
 [Containments][3]
 activityId=
@@ -200,15 +145,23 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=8
 
+[Containments][3][Applets][71]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][3][Applets][71][Configuration][General]
+expanding=false
+length=36
+
 [Containments][3][ConfigDialog]
-DialogHeight=1080
-DialogWidth=152
+DialogHeight=1200
+DialogWidth=161
 
 [Containments][3][Configuration]
 PreloadWeight=42
 
 [Containments][3][General]
-AppletOrder=6;63;7;46;16;33;30;37
+AppletOrder=6;63;7;46;16;33;30;71;37
 
 [Containments][39]
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
@@ -260,6 +213,41 @@ ToolBoxButtonX=327
 FillMode=3
 Image=file:///home/dennis/gits/tiles-and-such/Anime/222.gif
 SlidePaths=/usr/share/wallpapers
+
+[Containments][70]
+activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.desktopcontainment
+wallpaperplugin=org.kde.potd
+
+[Containments][70][ConfigDialog]
+DialogHeight=768
+DialogWidth=1108
+
+[Containments][70][Configuration]
+PreloadWeight=42
+
+[Containments][70][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=682
+sortMode=-1
+
+[Containments][70][Wallpaper][com.github.zren.inactiveblur][General]
+FillMode=2
+Image=file:///home/dennis/media/pictures/coolImages/bliss.jpeg
+
+[Containments][70][Wallpaper][org.kde.image][General]
+Blur=true
+Color=4,5,7
+Image=file:///home/dennis/media/pictures/coolImages/blue_marble.jpeg
+SlidePaths=/usr/share/wallpapers
+
+[Containments][70][Wallpaper][org.kde.potd][General]
+FillMode=2
+Provider=wcpotd
 
 [Containments][8]
 activityId=
@@ -326,7 +314,11 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][8][Applets][38][Configuration]
-PreloadWeight=0
+PreloadWeight=10
+
+[Containments][8][Applets][38][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][8][Applets][41]
 immutability=1

@@ -19,12 +19,8 @@ Rows=4
 [Effect-Blur]
 NoiseStrength=0
 
-[Effect-Cube]
-BorderActivateCylinder=3
-
 [Effect-PresentWindows]
-BorderActivate=1
-BorderActivateAll=9
+BorderActivateAll=1
 
 [Effect-Slide]
 SlideBackground=false
@@ -56,6 +52,7 @@ active=-1
 count=0
 
 [TabBox]
+BorderActivate=9
 DesktopLayout=org.kde.breeze.desktop
 DesktopListLayout=org.kde.breeze.desktop
 LayoutName=org.kde.breeze.desktop
@@ -63,6 +60,7 @@ LayoutName=org.kde.breeze.desktop
 [Windows]
 ActiveMouseScreen=true
 DelayFocusInterval=0
+ElectricBorderDelay=100
 FocusPolicy=FocusFollowsMouse
 
 [org.kde.kdecoration2]

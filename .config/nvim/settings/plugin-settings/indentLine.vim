@@ -8,8 +8,4 @@
 "Setting the characters for showing the indents on code
 let g:indentLine_char_list = ['│', '┆', '┊']
 "Setting their color too
-let g:indentLine_color_term = 239
-
-"Dont hide anything (on files like .tex, .json, .md etc)
-let g:indentLine_concealcursor = ''
-let g:indentLine_conceallevel = 0
+let g:indentLine_color_term = 238

@@ -125,8 +125,10 @@ ForegroundVisited=127,140,141
 DirSelectDialog Size=868,596
 
 [General]
+BrowserApplication=brave-browser.desktop
 ColorScheme=BreezeDarkSelectedBetter
 Name=Breeze Dark
+TerminalApplication=kitty
 XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
