@@ -5,6 +5,8 @@ switch-to-activity-f8212949-d13d-4b08-baeb-d9b9514c1325=none,none,Switch to acti
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch keyboard layout to Greek=none,none,Switch keyboard layout to Greek
+Switch keyboard layout to Αγγλικό (US)=none,none,Αλλαγή διάταξης πληκτρολογίου σε 'Αγγλικό (US)'
+Switch keyboard layout to Ελληνικό=none,none,Αλλαγή διάταξης πληκτρολογίου σε 'Ελληνικό'
 Switch to Next Keyboard Layout=Ctrl+Alt+K,none,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
@@ -35,11 +37,8 @@ display=Display\t,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{01d7c045-39ac-4d8c-9e48-73b537f4c5be}=none,none,Neovim
-{32ace780-e89e-4f5c-af51-44d6fe1ece06}=Ctrl+Alt+T,none,Launch Konsole
 {808cb5d3-6391-4143-890c-e29513e3ee4c}=Meta+Return,none,Kitty
 {c73c6ef9-3cec-4d17-a4ff-2411dd48899d}=Meta+D,none,Rofi
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Alt+M,none,Search
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -245,7 +244,7 @@ Turn Off Screen=none,none,Turn Off Screen
 _k_friendly_name=Power Management
 
 [plasmashell]
-_k_friendly_name=Activity switching
+_k_friendly_name=Plasma
 activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
 activate task manager entry 10=,Meta+0,Activate Task Manager Entry 10
 activate task manager entry 2=none,Meta+2,Activate Task Manager Entry 2

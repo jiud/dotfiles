@@ -47,10 +47,6 @@ wobblywindowsEnabled=true
 [Script-forceblur]
 patterns=alacritty\nkitty
 
-[SubSession: b9467071-3718-4353-b90c-5d681de9ce1a]
-active=-1
-count=0
-
 [TabBox]
 BorderActivate=9
 DesktopLayout=org.kde.breeze.desktop
