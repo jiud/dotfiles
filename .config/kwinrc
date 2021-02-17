@@ -14,7 +14,7 @@ Name_2=Web
 Name_3=Tasks
 Name_4=Writing
 Number=4
-Rows=4
+Rows=2
 
 [Effect-Blur]
 NoiseStrength=0
