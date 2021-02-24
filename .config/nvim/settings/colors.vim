@@ -14,4 +14,4 @@ set background=dark
 set cursorline
 
 "Setting the colorscheme
-colorscheme one
+colorscheme hyper

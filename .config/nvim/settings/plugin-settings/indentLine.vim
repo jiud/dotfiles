@@ -6,6 +6,6 @@
 ""                                                      
 
 "Setting the characters for showing the indents on code
-let g:indentLine_char_list = ['│', '┆', '┊']
+let g:indentLine_char_list = ['·']
 "Setting their color too
 let g:indentLine_color_term = 238

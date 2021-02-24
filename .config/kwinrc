@@ -60,8 +60,8 @@ ElectricBorderDelay=100
 FocusPolicy=FocusFollowsMouse
 
 [org.kde.kdecoration2]
-BorderSize=None
+BorderSize=Tiny
 BorderSizeAuto=false
 ButtonsOnRight=IAX
-library=org.kde.oxygen
-theme=Oxygen
+library=org.kde.kwin.aurorae
+theme=__aurorae__svg__borderline

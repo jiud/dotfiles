@@ -26,12 +26,17 @@
  '(doom-modeline-unicode-fallback t)
  '(evil-want-Y-yank-to-eol t)
  '(global-display-line-numbers-mode t)
+ '(indent-guide-global-mode t)
+ '(indent-guide-recursive nil)
+ '(line-number-mode nil)
  '(line-spacing 0.0)
  '(lsp-ui-sideline-show-hover t)
  '(mouse-autoselect-window t)
  '(neo-theme 'icons)
  '(package-selected-packages
-   '(company magit vlf projectile ## crux all-the-icons-dired vscode-icon dired-sidebar lsp-python-ms lsp-java web-mode lsp-ui lsp-mode git-gutter doom-themes centaur-tabs doom-modeline one-themes evil))
+   '(indent-guide company magit vlf projectile ## crux all-the-icons-dired vscode-icon dired-sidebar lsp-python-ms lsp-java web-mode lsp-ui lsp-mode git-gutter doom-themes centaur-tabs doom-modeline one-themes evil))
+ '(ring-bell-function 'ignore)
+ '(scroll-conservatively 1000)
  '(tool-bar-mode nil)
  '(vlf-application 'dont-ask))
 (custom-set-faces

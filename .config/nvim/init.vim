@@ -21,7 +21,7 @@ runtime settings/syntax.vim
 "Initializing settings for vim registers
 runtime settings/registers.vim
 "Initializing settings for some of vims keybindings
-runtime settings/keybindings.vim
+runtime settings/keybinds.vim
 
 "Initializing plugin custom settings
 runtime settings/plugin-settings/coc.vim
@@ -29,3 +29,4 @@ runtime settings/plugin-settings/airline.vim
 runtime settings/plugin-settings/indentLine.vim
 runtime settings/plugin-settings/MatchTagAlways.vim
 runtime settings/plugin-settings/NerdTree.vim
+runtime settings/plugin-settings/devIcons.vim

@@ -42,8 +42,14 @@ set nowrap
 "If wrapping is ever enabled, tell vim not to wrap in the middle of the word
 set linebreak
 
+"Incremental search for real time searching
+set incsearch
+
 "Commands that are typed are shown on the bottom right corner
 set showcmd
+
+"Nice visual on regex substitution
+set inccommand=split
 
 "Set mouse controls on
 set mouse=a

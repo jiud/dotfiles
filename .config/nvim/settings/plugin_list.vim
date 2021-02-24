@@ -20,7 +20,7 @@ Plug 'rakr/vim-one'
 Plug 'pineapplegiant/spaceduck'
 
 "A lot of other themes
-Plug 'gmist/vim-palette'
+Plug 'chriskempson/base16-vim'
 
 "Themes for airline
 Plug 'vim-airline/vim-airline-themes'
@@ -30,6 +30,8 @@ Plug 'vim-airline/vim-airline'
 
 "Sidebar for file navigation
 Plug 'preservim/nerdtree'
+
+Plug 'jdsimcoe/hyper.vim'
 
 "
 "
@@ -60,6 +62,7 @@ Plug 'chrisbra/Colorizer'
 
 "Alignment of text range with a reference character by using command: Tab/<character"
 Plug 'godlygeek/Tabular'
+
 
 "
 "

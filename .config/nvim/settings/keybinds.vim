@@ -12,5 +12,5 @@
 :command Q q
 
 "For switching buffers 
-map <C-J> :bprev<CR>
-map <C-K> :bnext<CR>
+map <C-H> :bprev<CR>
+map <C-L> :bnext<CR>

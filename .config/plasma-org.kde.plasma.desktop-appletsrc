@@ -76,7 +76,7 @@ immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][3][Applets][37][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][3][Applets][37][Configuration][ConfigDialog]
 DialogHeight=480
@@ -125,7 +125,7 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][3][Applets][74][Configuration]
-PreloadWeight=92
+PreloadWeight=100
 
 [Containments][3][Applets][74][Configuration][Appearance]
 chartFace=org.kde.ksysguard.textonly
@@ -209,10 +209,10 @@ immutability=1
 plugin=org.kde.plasma.colorpicker
 
 [Containments][66][Applets][69][Configuration]
-PreloadWeight=33
+PreloadWeight=38
 
 [Containments][66][Applets][69][Configuration][General]
-history=#282c34
+history=#21242b,#282c34
 
 [Containments][66][ConfigDialog]
 DialogHeight=540
@@ -231,6 +231,7 @@ Image=file:///home/dennis/gits/tiles-and-such/Anime/222.gif
 SlidePaths=/usr/share/wallpapers
 
 [Containments][70]
+ItemGeometriesVertical=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
 formfactor=0
 immutability=1
@@ -240,7 +241,7 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][70][ConfigDialog]
-DialogHeight=562
+DialogHeight=734
 DialogWidth=644
 
 [Containments][70][Configuration]
@@ -255,9 +256,12 @@ sortMode=-1
 FillMode=2
 Image=file:///home/dennis/media/pictures/coolImages/bliss.jpeg
 
+[Containments][70][Wallpaper][org.kde.color][General]
+Color=0,0,0
+
 [Containments][70][Wallpaper][org.kde.image][General]
-Color=3,27,51
-Image=file:///home/dennis/media/pictures/coolImages/bliss.jpeg
+FillMode=3
+Image=file:///home/dennis/gits/tiles-and-such/Anime/221.gif
 SlidePaths=/usr/share/wallpapers
 
 [Containments][70][Wallpaper][org.kde.potd][General]
@@ -278,7 +282,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=73
+PreloadWeight=78
 
 [Containments][8][Applets][11][Configuration]
 PreloadWeight=42
@@ -312,14 +316,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][18][Configuration]
-PreloadWeight=73
+PreloadWeight=88
 
 [Containments][8][Applets][19]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][19][Configuration]
-PreloadWeight=73
+PreloadWeight=78
 
 [Containments][8][Applets][31][Configuration]
 PreloadWeight=42
@@ -371,7 +375,11 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][9][Configuration]
-PreloadWeight=80
+PreloadWeight=90
+
+[Containments][8][Applets][9][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
 [Containments][8][ConfigDialog]
 DialogHeight=743
