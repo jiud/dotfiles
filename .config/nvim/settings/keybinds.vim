@@ -14,3 +14,26 @@
 "For switching buffers 
 map <C-H> :bprev<CR>
 map <C-L> :bnext<CR>
+
+"For operating quickly in other languages, for example in Greek:
+"I have the 'ι' for insert mode, like 'i'
+"and 'ς' for write, in place of 'w'
+
+:cmap ς w
+:nmap ι i
+:nmap ο o
+:nmap α a
+:cmap ς; wq
+:nmap π p
+:nmap χ x
+:nmap ρ r
+:nmap υ y
+:nmap η h
+:nmap ξ j
+:nmap κ k
+:nmap λ l
+:nmap ς w
+:nmap β b
+
+
+

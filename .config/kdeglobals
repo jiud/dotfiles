@@ -25,7 +25,7 @@ IntensityEffect=0
 
 [Colors:Button]
 BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
+BackgroundNormal=0,0,0
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -51,23 +51,9 @@ ForegroundNormal=239,240,241
 ForegroundPositive=17,209,22
 ForegroundVisited=61,174,230
 
-[Colors:Header]
-BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
-DecorationFocus=61,174,233
-DecorationHover=61,174,233
-ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
-ForegroundLink=41,128,185
-ForegroundNegative=218,68,83
-ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
-ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
-
 [Colors:Selection]
 BackgroundAlternate=29,153,243
-BackgroundNormal=35,102,135
+BackgroundNormal=33,95,126
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=252,252,252
@@ -81,7 +67,7 @@ ForegroundVisited=189,195,199
 
 [Colors:Tooltip]
 BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
+BackgroundNormal=0,0,0
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -95,7 +81,7 @@ ForegroundVisited=127,140,141
 
 [Colors:View]
 BackgroundAlternate=49,54,59
-BackgroundNormal=35,38,41
+BackgroundNormal=4,4,4
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -109,7 +95,7 @@ ForegroundVisited=127,140,141
 
 [Colors:Window]
 BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
+BackgroundNormal=0,0,0
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -126,7 +112,7 @@ DirSelectDialog Size=868,596
 
 [General]
 BrowserApplication=brave-browser.desktop
-ColorScheme=BreezeDarkSelectedBetter
+ColorScheme=BreezeBlack
 Name=Breeze Dark
 TerminalApplication=kitty
 XftAntialias=true
@@ -137,7 +123,7 @@ font=Open Sans,9,-1,5,50,0,0,0,0,0
 menuFont=Open Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=Open Sans,8,-1,5,50,0,0,0,0,0
-toolBarFont=Manrope,11,-1,5,50,0,0,0,0,0
+toolBarFont=Manrope,9,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
@@ -148,7 +134,6 @@ AnimationDurationFactor=0.5
 ColorScheme=Breeze
 LookAndFeelPackage=org.kde.breezedark.desktop
 contrast=4
-widgetStyle=Oxygen
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -178,10 +163,10 @@ FullScreen=
 
 [WM]
 FakeEntryToKeepThisGroup=true
-activeBackground=49,54,59
+activeBackground=0,0,0
 activeBlend=255,255,255
-activeFont=Iosevka [CYEL],10,-1,5,57,0,0,0,0,0,Medium
+activeFont=Manrope,9,-1,5,63,0,0,0,0,0,SemiBold
 activeForeground=239,240,241
-inactiveBackground=49,54,59
-inactiveBlend=75,71,67
+inactiveBackground=0,0,0
+inactiveBlend=82,95,53
 inactiveForeground=127,140,141

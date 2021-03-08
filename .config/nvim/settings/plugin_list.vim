@@ -33,6 +33,8 @@ Plug 'preservim/nerdtree'
 
 Plug 'jdsimcoe/hyper.vim'
 
+Plug 'morhetz/gruvbox'
+
 "
 "
 " Git integration

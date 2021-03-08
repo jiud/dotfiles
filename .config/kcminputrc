@@ -1,8 +1,8 @@
 [$Version]
-update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize
+update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminputrc_repeat.upd:kcminputrc_migrate_repeat_value
 
 [Keyboard]
-KeyboardRepeating=0
+KeyRepeat=repeat
 NumLock=2
 RepeatDelay=600
 RepeatRate=25

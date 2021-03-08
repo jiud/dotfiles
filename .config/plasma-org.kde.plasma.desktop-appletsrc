@@ -1,5 +1,5 @@
 [ActionPlugins][0]
-MidButton;NoModifier=org.kde.paste
+MiddleButton;NoModifier=org.kde.paste
 RightButton;NoModifier=org.kde.contextmenu
 wheel:Vertical;NoModifier=org.kde.switchdesktop
 
@@ -40,22 +40,6 @@ lastScreen=0
 location=4
 plugin=org.kde.panel
 wallpaperplugin=org.kde.image
-
-[Containments][3][Applets][16]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][3][Applets][16][Configuration]
-PreloadWeight=100
-
-[Containments][3][Applets][16][Configuration][Appearance]
-customDateFormat=ddd d MMM yyyy
-dateFormat=custom
-fontFamily=scientifica
-
-[Containments][3][Applets][16][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
 
 [Containments][3][Applets][30]
 immutability=1
@@ -120,39 +104,6 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=8
 
-[Containments][3][Applets][74]
-immutability=1
-plugin=org.kde.plasma.systemmonitor
-
-[Containments][3][Applets][74][Configuration]
-PreloadWeight=100
-
-[Containments][3][Applets][74][Configuration][Appearance]
-chartFace=org.kde.ksysguard.textonly
-title=CPU use - MEM use
-
-[Containments][3][Applets][74][Configuration][ConfigDialog]
-DialogHeight=735
-DialogWidth=720
-
-[Containments][3][Applets][74][Configuration][SensorColors]
-acpi/Battery/0-Battery/Charge=35,131,135
-acpi/Thermal_Zone/0-acpitz/Temperature=68,35,135
-acpi/Thermal_Zone/1-pch_skylake/Temperature=0,255,255
-cpu/system/TotalLoad=145,62,56
-mem/physical/allocated=36,35,135
-mem/physical/allocatedlevel=84,124,62
-mem/physical/availablelevel=135,35,122
-mem/physical/total=51,135,35
-mem/physical/used=106,35,135
-mem/physical/usedlevel=135,45,35
-network/all/download=135,35,84
-network/wlp4s0/ipv6address=63,135,35
-
-[Containments][3][Applets][74][Configuration][Sensors]
-highPrioritySensorIds=["cpu/system/TotalLoad","mem/physical/allocatedlevel","acpi/Thermal_Zone/1-pch_skylake/Temperature"]
-totalSensors=["cpu/system/TotalLoad"]
-
 [Containments][3][Applets][75]
 immutability=1
 plugin=org.kde.plasma.panelspacer
@@ -163,15 +114,108 @@ PreloadWeight=42
 [Containments][3][Applets][75][Configuration][General]
 length=55
 
+[Containments][3][Applets][77]
+immutability=1
+plugin=RSS_feeds
+
+[Containments][3][Applets][77][Configuration]
+PreloadWeight=85
+
+[Containments][3][Applets][77][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][3][Applets][77][Configuration][General]
+headerColor=#aa0000
+thumbnailRound=false
+thumbnails=false
+url=https://www.efsyn.gr/feed.xml
+
+[Containments][3][Applets][80]
+immutability=1
+plugin=org.kde.plasma.eventcalendar
+
+[Containments][3][Applets][80][Configuration]
+PreloadWeight=100
+
+[Containments][3][Applets][80][Configuration][Calendar]
+monthEventBadgeType=bottomBarHighlight
+
+[Containments][3][Applets][80][Configuration][ConfigDialog]
+DialogHeight=690
+DialogWidth=1103
+
+[Containments][3][Applets][80][Configuration][Events]
+enabledCalendarPlugins=
+
+[Containments][3][Applets][80][Configuration][General]
+clockFontFamily=Montserrat Light
+clockLine2HeightRatio=0.38
+clockShowLine2=true
+clockTimeFormat1=HH:mm
+clockTimeFormat2=d MMMM yyyy
+pin=true
+v71Migration=true
+v72Migration=true
+
+[Containments][3][Applets][80][Configuration][Google Calendar]
+accessToken=ya29.a0AfH6SMDZ94XQglzy7RQmbqivuy2o1OWcqkH4nIAaTi-ymbNCVTQN-ubqBNPpwEt4HCxA6rxW0fXUPGFLbmXNrIHBymB31pfCN6IDTL_GtWF9_pcThn6NfiPW9hi9RpKtFz3NGH--hk-mDkfk2TQ7gohs2lqPuA
+accessTokenExpiresAt=290227992
+accessTokenType=Bearer
+calendarIdList=dionisishahaha@gmail.com
+calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU3NzIwMTQwMTIzMDAwMFwiIiwiaWQiOiJlbC5ncmVlayNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiLOlM65zrHOus6/z4DOrc+CIM+Dz4TOt869IM6VzrvOu86szrTOsSIsImRlc2NyaXB0aW9uIjoizpHPgc6zzq/Otc+CIM66zrHOuSDOtc6/z4HPhM6tz4Igz4PPhM63zr0gzpXOu867zqzOtM6xIiwidGltZVpvbmUiOiJFdXJvcGUvQXRoZW5zIiwic3VtbWFyeU92ZXJyaWRlIjoizpTOuc6xzrrOv8+Azq3PgiDPg8+EzrfOvSDOlc67zrvOrM60zrEiLCJjb2xvcklkIjoiOCIsImJhY2tncm91bmRDb2xvciI6IiMxNmE3NjUiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE1NzcyMDE0MDIxMDgwMDBcIiIsImlkIjoiZW4uZ3JlZWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiSG9saWRheXMgaW4gR3JlZWNlIiwiZGVzY3JpcHRpb24iOiJIb2xpZGF5cyBhbmQgT2JzZXJ2YW5jZXMgaW4gR3JlZWNlIiwidGltZVpvbmUiOiJFdXJvcGUvQXRoZW5zIiwic3VtbWFyeU92ZXJyaWRlIjoiSG9saWRheXMgaW4gR3JlZWNlIiwiY29sb3JJZCI6IjE3IiwiYmFja2dyb3VuZENvbG9yIjoiIzlhOWNmZiIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJhY2Nlc3NSb2xlIjoicmVhZGVyIiwiZGVmYXVsdFJlbWluZGVycyI6W10sImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19LHsia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU5Mjk1Mjg0NDg4ODAwMFwiIiwiaWQiOiJkaW9uaXNpc2hhaGFoYUBnbWFpbC5jb20iLCJzdW1tYXJ5IjoiZGlvbmlzaXNoYWhhaGFAZ21haWwuY29tIiwidGltZVpvbmUiOiJFdXJvcGUvQXRoZW5zIiwiY29sb3JJZCI6IjE0IiwiYmFja2dyb3VuZENvbG9yIjoiIzlmZTFlNyIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6Im93bmVyIiwiZGVmYXVsdFJlbWluZGVycyI6W3sibWV0aG9kIjoicG9wdXAiLCJtaW51dGVzIjozMH1dLCJub3RpZmljYXRpb25TZXR0aW5ncyI6eyJub3RpZmljYXRpb25zIjpbeyJ0eXBlIjoiZXZlbnRDcmVhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDaGFuZ2UiLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2FuY2VsbGF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudFJlc3BvbnNlIiwibWV0aG9kIjoiZW1haWwifV19LCJwcmltYXJ5Ijp0cnVlLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fV0=
+refreshToken=1//098KLdm0D9yVxCgYIARAAGAkSNwF-L9IrIL-_VZ1AgBz489yoEaCPH8TSGnjMIpBxNnP66LSPRLug2Nd9U-G8EiZzv95IrXuGRVM
+sessionClientId=391436299960-k0s16nm589meovhoblpcquqgbbrena17.apps.googleusercontent.com
+sessionClientSecret=Gdr_7lKIQuGBD4Up3MOiw-7i
+tasklistIdList=MDk3NDIwMjEyNjE3NTg5MzUwNzE6MDow
+tasklistList=W3sia2luZCI6InRhc2tzI3Rhc2tMaXN0IiwiaWQiOiJNRGszTkRJd01qRXlOakUzTlRnNU16VXdOekU2TURvdyIsImV0YWciOiJcIkxURXpPREkxT0RBek1nXCIiLCJ0aXRsZSI6Ik15IFRhc2tzIiwidXBkYXRlZCI6IjIwMjEtMDMtMDNUMTE6MDQ6MDQuODcwWiIsInNlbGZMaW5rIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vdGFza3MvdjEvdXNlcnMvQG1lL2xpc3RzL01EazNOREl3TWpFeU5qRTNOVGc1TXpVd056RTZNRG93In1d
+
+[Containments][3][Applets][80][Configuration][Weather]
+openWeatherMapCityId=264371
+
+[Containments][3][Applets][86]
+immutability=1
+plugin=org.kde.plasma.systemmonitor
+
+[Containments][3][Applets][86][Configuration]
+PreloadWeight=100
+
+[Containments][3][Applets][86][Configuration][Appearance]
+chartFace=org.kde.ksysguard.horizontalbars
+title=CPU-MEM-TEMP
+
+[Containments][3][Applets][86][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][3][Applets][86][Configuration][SensorColors]
+acpi/Thermal_Zone/1-pch_skylake/Temperature=81,33,126
+cpu/all/system=131,67,195
+cpu/all/usage=33,95,126
+cpu/cpu age=33,126,46
+cpu/cpu0/usage=83,33,126
+cpu/cpu1/usage=126,33,58
+cpu/cpu2/usage=126,120,33
+cpu/cpu3/usage=33,126,45
+gpu/all/usage=126,93,33
+lmsensors/coretemp-isa-0000/Core_0=36,126,33
+lmsensors/coretemp-isa-0000/Core_1=33,126,49
+memory/physical/usedPercent=121,126,20
+
+[Containments][3][Applets][86][Configuration][Sensors]
+highPrioritySensorIds=["cpu/all/usage","memory/physical/usedPercent"]
+lowPrioritySensorIds=["lmsensors/coretemp-isa-0000/Package_id_0"]
+totalSensors=["cpu/all/usage"]
+
 [Containments][3][ConfigDialog]
 DialogHeight=83
-DialogWidth=1200
+DialogWidth=1920
 
 [Containments][3][Configuration]
 PreloadWeight=10
 
 [Containments][3][General]
-AppletOrder=37;7;75;6;46;16;30;74
+AppletOrder=37;77;7;75;6;46;80;86;30
 
 [Containments][39]
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
@@ -195,7 +239,8 @@ Image=file:///home/dennis/gits/tiles-and-such/Anime/222.gif
 SlidePaths=/usr/share/wallpapers
 
 [Containments][66]
-ItemGeometriesHorizontal=Applet-69:16,928,112,80,0;
+ItemGeometriesHorizontal=Applet-69:16,480,144,80,0;
+ItemGeometriesVertical=Applet-69:16,1200,112,80,0;
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
 formfactor=0
 immutability=1
@@ -215,8 +260,8 @@ PreloadWeight=38
 history=#21242b,#282c34
 
 [Containments][66][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=1257
+DialogWidth=1024
 
 [Containments][66][Configuration]
 PreloadWeight=18
@@ -231,6 +276,7 @@ Image=file:///home/dennis/gits/tiles-and-such/Anime/222.gif
 SlidePaths=/usr/share/wallpapers
 
 [Containments][70]
+ItemGeometriesHorizontal=
 ItemGeometriesVertical=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
 formfactor=0
@@ -238,10 +284,10 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.desktopcontainment
-wallpaperplugin=org.kde.image
+wallpaperplugin=org.kde.potd
 
 [Containments][70][ConfigDialog]
-DialogHeight=734
+DialogHeight=360
 DialogWidth=644
 
 [Containments][70][Configuration]
@@ -249,7 +295,7 @@ PreloadWeight=10
 
 [Containments][70][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=326
+ToolBoxButtonX=595
 sortMode=-1
 
 [Containments][70][Wallpaper][com.github.zren.inactiveblur][General]
@@ -265,8 +311,9 @@ Image=file:///home/dennis/gits/tiles-and-such/Anime/221.gif
 SlidePaths=/usr/share/wallpapers
 
 [Containments][70][Wallpaper][org.kde.potd][General]
+Category=1065376
 FillMode=2
-Provider=wcpotd
+Provider=unsplash
 
 [Containments][8]
 activityId=
@@ -282,7 +329,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][8][Applets][10][Configuration]
-PreloadWeight=78
+PreloadWeight=88
 
 [Containments][8][Applets][11][Configuration]
 PreloadWeight=42
@@ -316,14 +363,14 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][8][Applets][18][Configuration]
-PreloadWeight=88
+PreloadWeight=100
 
 [Containments][8][Applets][19]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][8][Applets][19][Configuration]
-PreloadWeight=78
+PreloadWeight=100
 
 [Containments][8][Applets][31][Configuration]
 PreloadWeight=42
@@ -351,6 +398,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][8][Applets][41][Configuration][General]
+headerColor=#3c3e46
 thumbnailRound=false
 thumbnailSize=30
 thumbnails=false
@@ -375,7 +423,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][8][Applets][9][Configuration]
-PreloadWeight=90
+PreloadWeight=100
 
 [Containments][8][Applets][9][Configuration][ConfigDialog]
 DialogHeight=540
@@ -389,8 +437,8 @@ DialogWidth=1028
 PreloadWeight=10
 
 [Containments][8][General]
-extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications
-knownItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds
+extraItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds,org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout
+knownItems=org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,RSS_feeds,org.kde.plasma.keyboardlayout
 shownItems=org.kde.plasma.battery,org.kde.plasma.volume,org.kde.plasma.notifications
 
 [Containments3Appletsts][6][Configuration][General]
