@@ -38,6 +38,9 @@
  '(mouse-autoselect-window t)
  '(neo-theme 'icons)
  '(objed-cursor-color "#D95468")
+ '(org-hide-emphasis-markers t)
+ '(org-hide-leading-stars nil)
+ '(org-hierarchical-todo-statistics t)
  '(package-selected-packages
    '(blackboard-theme subatomic-theme company magit vlf projectile ## crux all-the-icons-dired vscode-icon dired-sidebar lsp-python-ms lsp-java web-mode lsp-ui lsp-mode git-gutter doom-themes centaur-tabs doom-modeline one-themes evil))
  '(pdf-view-midnight-colors (cons "#A0B3C5" "#1D252C"))
@@ -76,6 +79,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Iosevka" :foundry "CYEL" :slant normal :weight normal :height 97 :width normal))))
+ '(org-code ((t (:foreground "#fd971f" :weight semi-bold :family "Free Mono"))))
+ '(org-document-title ((t (:foreground "yellow" :weight bold))))
+ '(org-level-1 ((t (:inherit outline-1 :height 1.5))))
+ '(org-level-2 ((t (:inherit outline-2 :height 1.2))))
  '(tab-bar ((t (:background "#262829" :foreground "#262829" :height 1.0 :width expanded))))
  '(tab-bar-tab ((t (:stipple "" :background "#1b1d1e" :foreground "#dddddd" :box (:line-width 10 :color "#1d1d1e") :slant italic))))
  '(tab-bar-tab-inactive ((t (:background "#262829" :foreground "#5B6268" :box nil)))))
@@ -161,9 +168,6 @@
 ;; The tab character has a 4 character width. 
 (setq-default tab-width 4)
 (setq indent-line-function 'insert-tab)
-
-;;Start the Emacs server like a real chad.
-(server-start)
 
 ;;WEB MODE ON MAN
 (require 'web-mode)

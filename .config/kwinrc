@@ -35,7 +35,7 @@ LongitudeAuto=23.7353
 NightTemperature=4100
 
 [Plugins]
-blurEnabled=true
+blurEnabled=false
 forceblurEnabled=false
 krohnkiteEnabled=true
 kwin4_effect_squashEnabled=false

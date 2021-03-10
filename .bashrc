@@ -31,6 +31,7 @@ alias vimdots='cd ~/.config/nvim/'
 #^^^ aliases for bookmarking
 #Needed for intended terminal behevior on servers
 alias ssh="kitty +kitten ssh"
+alias notes="emacsclient --no-wait ~/uniBackup/_TASKS_/uniToDo.org"
 
 #PS1='[\u@\h \W]\$ '
 #PS1='[\u@\h \W]\$ 'i
@@ -42,8 +43,10 @@ git_branch() {
 
 export PS1="\[\033[33m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[32m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[33m\]╰──  \$ \[\033[00m\]"
 
-#export EDITOR="emacsclient --alternate-editor='emacs' --no-wait" 
-export EDITOR="nvim" 
+#Setting the system's default editor
+export ALTERNATE_EDITOR="emacs"
+export EDITOR="emacsclient --no-wait" 
+#export EDITOR="nvim"
 
 #This the environment variables for pfetch 
 export PF_INFO="os kernel memory uptime pkgs"
