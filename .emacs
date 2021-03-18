@@ -24,8 +24,14 @@
  '(dired-sidebar-theme 'icons)
  '(display-line-numbers-type 'relative)
  '(display-time-24hr-format t)
+ '(doom-modeline-buffer-state-icon t)
+ '(doom-modeline-enable-word-count nil)
  '(doom-modeline-github t)
+ '(doom-modeline-modal-icon t)
  '(doom-modeline-unicode-fallback t)
+ '(evil-mode t)
+ '(evil-mode-line-format 'before)
+ '(evil-undo-system 'undo-tree)
  '(evil-want-Y-yank-to-eol t)
  '(fci-rule-color "#56697A")
  '(global-display-line-numbers-mode t)
@@ -42,11 +48,12 @@
  '(org-hide-leading-stars nil)
  '(org-hierarchical-todo-statistics t)
  '(package-selected-packages
-   '(blackboard-theme subatomic-theme company magit vlf projectile ## crux all-the-icons-dired vscode-icon dired-sidebar lsp-python-ms lsp-java web-mode lsp-ui lsp-mode git-gutter doom-themes centaur-tabs doom-modeline one-themes evil))
+   '(undo-tree blackboard-theme subatomic-theme company magit vlf projectile ## crux all-the-icons-dired vscode-icon dired-sidebar lsp-python-ms lsp-java web-mode lsp-ui lsp-mode git-gutter doom-themes centaur-tabs doom-modeline one-themes evil))
  '(pdf-view-midnight-colors (cons "#A0B3C5" "#1D252C"))
  '(ring-bell-function 'ignore)
  '(rustic-ansi-faces
    ["#1D252C" "#D95468" "#8BD49C" "#EBBF83" "#5EC4FF" "#E27E8D" "#70E1E8" "#A0B3C5"])
+ '(size-indication-mode t)
  '(tool-bar-mode nil)
  '(vc-annotate-background "#1D252C")
  '(vc-annotate-color-map
@@ -253,3 +260,12 @@
 (setq transient-default-level 5)
 
 (setq auto-window-vscroll nil)
+
+;; Turn on the global undo tree for easier undos
+(global-undo-tree-mode)
+
+;; Turn on the "a" command on dired (access a directory on the same buffer)
+(put 'dired-find-alternate-file 'disabled nil)
+
+;; Add all-the-icons to dired mode
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
