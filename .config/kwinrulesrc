@@ -1,2 +1,11 @@
 [$Version]
 update_info=kwinrules.upd:replace-placement-string-to-enum
+
+[1]
+Description=New window settings
+types=4
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=1

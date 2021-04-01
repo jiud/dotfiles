@@ -61,8 +61,6 @@ ElectricBorderDelay=100
 FocusPolicy=FocusFollowsMouse
 
 [org.kde.kdecoration2]
-BorderSize=Tiny
-BorderSizeAuto=false
-ButtonsOnRight=IAX
+ButtonsOnRight=X
 library=org.kde.kwin.aurorae
-theme=__aurorae__svg__borderline
+theme=__aurorae__svg__McMojave

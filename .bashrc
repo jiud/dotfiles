@@ -74,5 +74,5 @@ export LANG='en_US.UTF-8'
 #Stopping Control-Q and Control-S from annoying me 
 stty -ixon
 
-~/programming/scripts/bashinfo/bashinfo.sh
+~/dev/programming/scripts/bashinfo/bashinfo.sh
 todo
