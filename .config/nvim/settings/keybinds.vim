@@ -12,8 +12,8 @@
 :command Q q
 
 "For switching buffers 
-map <C-H> :bprev<CR>
-map <C-L> :bnext<CR>
+map <C-h> :bprev<CR>
+map <C-l> :bnext<CR>
 
 "For operating quickly in other languages, for example in Greek:
 "I have the 'ι' for insert mode, like 'i'

@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-scale '/home/dennis/Downloads/space_pattern.jpeg'
+feh --no-fehbg --bg-fill '/home/dennis/media/pictures/coolImages/grey_mountain_2.jpeg'

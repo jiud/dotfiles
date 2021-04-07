@@ -895,7 +895,7 @@ Type=SIMPLE_ACTION_DATA
 ActionsCount=1
 
 [Data_4Actions0]
-CommandURL=~/programming/scripts/rofiScript.sh
+CommandURL=~/dev/programming/scripts/rofiScript.sh
 Type=COMMAND_URL
 
 [Data_4Conditions]
@@ -912,7 +912,7 @@ Type=SHORTCUT
 Uuid={c73c6ef9-3cec-4d17-a4ff-2411dd48899d}
 
 [Data_5]
-Comment=Open Kitty
+Comment=Launch Kitty
 Enabled=true
 Name=Kitty
 Type=SIMPLE_ACTION_DATA

@@ -12,9 +12,9 @@ Id_4=b7499357-9118-4e5d-9295-0f0cea101a01
 Name_1=Code
 Name_2=Web
 Name_3=Tasks
-Name_4=Writing
+Name_4=Write
 Number=4
-Rows=2
+Rows=1
 
 [Effect-Blur]
 NoiseStrength=0
@@ -62,5 +62,3 @@ FocusPolicy=FocusFollowsMouse
 
 [org.kde.kdecoration2]
 ButtonsOnRight=X
-library=org.kde.kwin.aurorae
-theme=__aurorae__svg__McMojave

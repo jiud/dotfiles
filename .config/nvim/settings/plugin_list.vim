@@ -13,15 +13,6 @@ call plug#begin('~/.config/nvim/plugged')
 "
 "
 
-"One theme
-Plug 'rakr/vim-one'
-
-"Spaceduck theme
-Plug 'pineapplegiant/spaceduck'
-
-"A lot of other themes
-Plug 'chriskempson/base16-vim'
-
 "Themes for airline
 Plug 'vim-airline/vim-airline-themes'
 
@@ -31,9 +22,23 @@ Plug 'vim-airline/vim-airline'
 "Sidebar for file navigation
 Plug 'preservim/nerdtree'
 
-Plug 'jdsimcoe/hyper.vim'
+"A lot of themes
+Plug 'chriskempson/base16-vim'
 
+" Specific Themes 
+
+"" Low constrast themes
+Plug 'rakr/vim-one'
+
+"" High constrast themes
+""" Gruvbox, a variably high contrast theme
 Plug 'morhetz/gruvbox'
+""" Molokai, a mildly high consrast theme
+Plug 'tomasr/molokai'
+""" Spaceduck, a fairly high contrast theme
+Plug 'pineapplegiant/spaceduck'
+""" Hyper, a very high contrast theme
+Plug 'jdsimcoe/hyper.vim'
 
 "
 "
@@ -46,6 +51,15 @@ Plug 'airblade/vim-gitgutter'
 
 "Git command integration on vim, use git commands within vim (with :Git <command> primarily)
 Plug 'tpope/vim-fugitive' 
+
+"
+"
+" Org-mode specific
+"
+"
+
+"Bring org-mode to vim
+Plug 'jceb/vim-orgmode'
 
 "
 "

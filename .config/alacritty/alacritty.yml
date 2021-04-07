@@ -1,30 +1,30 @@
 colors:
   # Default colors
   primary:
-    background: '0x07062c'
-    foreground: '0xffffff'
+    background: '0x1B1D1E'
+    foreground: '0xf8f8f2'
 
   # Normal colors
   normal:
-    black:   '0x000000'
-    red:     '0xe92f2f'
-    green:   '0x0ed839'
-    yellow:  '0xdddd13'
-    blue:    '0x3b48e3'
-    magenta: '0xf996e2'
-    cyan:    '0x23edda'
-    white:   '0xababab'
+    black:   '0x272822'
+    red:     '0xf92672'
+    green:   '0xa6e22e'
+    yellow:  '0xf4bf75'
+    blue:    '0x66d9ef'
+    magenta: '0xae81ff'
+    cyan:    '0xa1efe4'
+    white:   '0xf8f8f2'
 
   # Bright colors
   bright:
-    black:   '0x343434'
-    red:     '0xe92f2f'
-    green:   '0x0ed839'
-    yellow:  '0xdddd13'
-    blue:    '0x3b48e3'
-    magenta: '0xf996e2'
-    cyan:    '0x23edda'
-    white:   '0xf9f9f9'
+    black:   '0x75715e'
+    red:     '0xf92672'
+    green:   '0xa6e22e'
+    yellow:  '0xf4bf75'
+    blue:    '0x66d9ef'
+    magenta: '0xae81ff'
+    cyan:    '0xa1efe4'
+    white:   '0xf9f8f5'
 
 background_opacity: 0.9
 
@@ -32,11 +32,11 @@ font:
   # Normal (roman) font face
   normal:
   
-    family: "Fantasque Sans Mono"
+    family: "FuraCode Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Regular
-  size: 12
+  size: 9
 
   # Bold font face
   bold:
@@ -44,16 +44,16 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "Fantasque Sans Mono"
+    family: "FuraCode Nerd Font"
 
     # The `style` can be specified to pick a specific face.
-    style: Bold
-  size: 12
+    style: Medium
+  size: 9
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 1
+    y: 2
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,

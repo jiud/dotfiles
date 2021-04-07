@@ -9,7 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-set $mod Mod1
+set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -46,7 +46,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec konsole
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -80,10 +80,11 @@ bindsym $mod+h split h
 
 
 #rofi launch
-bindsym $mod+d exec ~/scripts/rofiScript.sh
+bindsym $mod+d exec ~/dev/programming/scripts/rofiScript.sh
 
 #fix the goddamn keuboard layout
-bindsym $mod+b exec ~/scripts/keyboardSetup.sh
+#bindsym $mod+b exec ~/scripts/keyboardSetup.sh
+bindsym $mod+b exec brave
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -122,18 +123,18 @@ set $workspace9 "9:  ToDo"
 set $workspace10 "10:  Examples"
 
 # switch to workspace
-bindsym $mod+1 workspace $workspace1 
-bindsym $mod+2 workspace $workspace2 
-bindsym $mod+3 workspace $workspace3 
-bindsym $mod+4 workspace $workspace4 
-bindsym $mod+5 workspace $workspace5 
-bindsym $mod+6 workspace $workspace6 
-bindsym $mod+7 workspace $workspace7 
-bindsym $mod+8 workspace $workspace8 
-bindsym $mod+9 workspace $workspace9 
-bindsym $mod+0 workspace $workspace10
+bindsym $mod+F1 workspace $workspace1 
+bindsym $mod+F2 workspace $workspace2 
+bindsym $mod+F3 workspace $workspace3 
+bindsym $mod+F4 workspace $workspace4 
+bindsym $mod+F5 workspace $workspace5 
+bindsym $mod+F6 workspace $workspace6 
+bindsym $mod+F7 workspace $workspace7 
+bindsym $mod+F8 workspace $workspace8 
+bindsym $mod+F9 workspace $workspace9 
+bindsym $mod+F0 workspace $workspace10
 
-workspace $workspace1 output HDMI-2
+workspace $workspace1 output HDMI-1
 workspace $workspace2 output HDMI-2
 workspace $workspace3 output HDMI-2
 workspace $workspace4 output HDMI-2
@@ -142,7 +143,7 @@ workspace $workspace6 output HDMI-2
 workspace $workspace7 output HDMI-1
 workspace $workspace8 output HDMI-1
 workspace $workspace9 output HDMI-1
-workspace $workspace10 outputH HDMI-1
+workspace $workspace10 output HDMI-1
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
@@ -192,10 +193,6 @@ for_window [class="java"] floating enable
 
 ### enable lxappearance to run in floating mode, with title
 for_window [title="Customize Look and Feel"] floating enable
-
-#71 == F5, 72 == F6
-bindcode 71 exec firefox
-bindcode 72 exec arandr
 
 #this prevents some problems with the gaps
 for_window [class=".*"] border pixel 0
@@ -268,6 +265,6 @@ exec dunst
 #setting background
 exec_always --no-startup-id exec bash $HOME/.fehbg 
 #Custom keyboard layout
-exec /home/dennis/scripts/keyboardSetup.sh
+#exec /home/dennis/dev/programming/scripts/keyboardSetup.sh
 exec xsetroot -cursor_name left_ptr
 

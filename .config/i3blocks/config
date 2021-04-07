@@ -46,7 +46,7 @@ interval=30
 
 [batterybar]
 command=$SCRIPT_DIR/batterybar
-label=Bat 🔋: 
+label=Bat: 
 interval=5
 markup=pango
 min_width=Bat 🔋: ■■■■■
@@ -75,7 +75,7 @@ command=systemctl suspend
 [lock]
 full_text="Lock "
 align=center
-command=i3-msg -q exec "~/scripts/lockScreen.sh"
+command=i3-msg -q exec "~/dev/programming/scripts/lockScreen.sh"
 
 [xkb_layout]
 command=$SCRIPT_DIR/xkb_layout

@@ -135,6 +135,9 @@ ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
+[DialogIcons]
+Size=24
+
 [DirSelect Dialog]
 DirSelectDialog Size=868,596
 
@@ -151,23 +154,24 @@ font=Open Sans,9,-1,5,50,0,0,0,0,0
 menuFont=Open Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=Open Sans,8,-1,5,50,0,0,0,0,0
-toolBarFont=Manrope,9,-1,5,50,0,0,0,0,0
+toolBarFont=Fira Sans,9,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
-Theme=Papirus-Dark
+Theme=breeze-dark
 
 [KDE]
 AnimationDurationFactor=0.5
 ColorScheme=Breeze
 LookAndFeelPackage=org.kde.breezedark.desktop
 contrast=4
+widgetStyle=Oxygen
 
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=true
-Decoration position=2
+Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
@@ -175,16 +179,22 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
 Speedbar Width=162
-View Style=Detail
+View Style=Simple
 
 [KScreen]
 ScaleFactor=1
 ScreenScaleFactors=eDP1=1;DP1=1;DP2=1;HDMI1=1;HDMI2=1;VIRTUAL1=1;
+
+[MainToolbarIcons]
+Size=16
+
+[PanelIcons]
+Size=16
 
 [Shortcuts]
 FullScreen=

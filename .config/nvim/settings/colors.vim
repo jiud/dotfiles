@@ -8,10 +8,10 @@
 set termguicolors
 
 "Setting the background to dark
-set background=dark
+set background=light
 
 "Enables cursor line position tracking:
 set cursorline
 
 "Setting the colorscheme
-colorscheme one
+colorscheme molokai
