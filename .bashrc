@@ -28,7 +28,7 @@ alias untar='tar -zxvf' #extract tar file to current directory quickly
 alias vim='nvim' #replacing vim with nvim
 
 alias f='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' #making ranger dump you in the directory you exit from!
-alias dup='alacritty & disown $!' #start another window in the current dir and disown it
+alias dup='kitty & disown $!' #start another window in the current dir and disown it
 alias cleanup='pacman -Qdtq > pkgsForCleanup' # list potentially unneeded packages in a file, actually remove them with 'cat pkgs | pacman -Rns -' 
 alias update='echo -e "\033[1;33m" && curl -s https://www.archlinux.org/feeds/news/ | xmllint --xpath //item/title\ \|\ //item/pubDate /dev/stdin | sed "s/\(<title\|<\/title>\|<pubDate>\|<\/pubDate>\)//g" | head -n 6 | sed "s/+0000//g" && echo -e "\033[0m" && echo -e "\n\033[1;33m***\033[0m Performing \033[1;33mFULL SYSTEM UPGRADE\033[0m, check for \033[0;31mMANUAL INTERVENTION\033[0m on the news ↑ \033[1;33m***\033[0m\n" && yay -Syu'
 #^^^ Command to update but print arch news for needing manual interferance etc on top^^^
@@ -40,7 +40,7 @@ alias cms='cd ~/dev/work/cms-promo'
 alias uni='cd ~/uniBackup'
 alias vimdots='cd ~/.config/nvim/'
 alias dots='cd ~/.config/' #quickly tweak things
-alias notes="emacsclient --no-wait ~/uniBackup/_TASKS_/uniToDo.org"
+alias notes="nvim ~/uniBackup/TASKS/uniToDo.org"
 alias termdots="nvim ~/.config/kitty/kitty.conf"
 
 #Needed for intended kitty terminal behevior on servers
@@ -75,9 +75,6 @@ export APACHE_HOME=/usr/local/Apache
 #pythonpath to ~/.local/bin
 export PYTHONPATH=${PYTHONPATH}:~/.local/bin/
 
-#default app to theme qt5 in qt5ct
-export QT_QPA_PLATFORMTHEME=qt5ct
-
 #Exporting lang
 export LANG='en_US.UTF-8'
 
@@ -87,3 +84,5 @@ stty -ixon
 ~/dev/programming/scripts/bashinfo/bashinfo.sh
 todo
 
+#My own script for teleporting
+source ~/dev/programming/bash/zap.sh

@@ -11,6 +11,9 @@
 :command W w
 :command Q q
 
+" Make Y yank till end of line
+nnoremap Y y$
+
 "For switching buffers 
 map <C-h> :bprev<CR>
 map <C-l> :bnext<CR>
@@ -34,6 +37,3 @@ map <C-l> :bnext<CR>
 :nmap λ l
 :nmap ς w
 :nmap β b
-
-
-
