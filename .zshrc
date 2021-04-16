@@ -1,14 +1,19 @@
-#
-# ~/.bashrc
-#
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=3000
+SAVEHIST=1000
+unsetopt beep
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/dennis/.zshrc'
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
 
-# Avoid duplicates
-HISTCONTROL=ignoredups:erasedups  
-# When the shell exits, append to the history file instead of overwriting it
-shopt -s histappend
+#Used for enabling use of fuctions in PS1
+setopt PROMPT_SUBST
 
 
 #Failock for usig trash-put
@@ -52,7 +57,7 @@ git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
 }
 
-export PS1="\[\033[33m\]╭─\[\033[34m\]   \[\033[00m\]\u \[\033[32m\]\$(git_branch)\[\033[00m\] \e[34;1m\w\e[0m\n\[\033[33m\]╰──  \$ \[\033[00m\]"
+export PS1=$'%F{yellow}╭─%F{blue}   %F{green} $(git_branch) %F{blue}%~\n%F{yellow}╰──🮲🮳[%(?.√.?%F{red}%?)%F{yellow}]\$ %F{white}'
 
 #Setting the system's default editor
 #export ALTERNATE_EDITOR="emacs"
@@ -61,29 +66,3 @@ export EDITOR="nvim"
 
 #This the environment variables for pfetch 
 export PF_INFO="os kernel memory uptime pkgs"
-export PF_SEP=""
-export PF_COL2=3
-
-#antialias fonts in java apps
-#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
-
-#exporting apache poi and apache commons for java
-#export CLASSPATH=/usr/share/poi-4.1.2/poi-4.1.2.jar:/usr/share/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar:/usr/share/poi-4.1.2/poi-ooxml-4.1.2.jar:/usr/share/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar:/usr/share/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar:/usr/local/Apache/commons-collections4-4.4/commons-collections4-4.4.jar:/usr/local/Apache/commons-io-2.7/commons-io-2.7.jar:/usr/local/Apache/commons-compress-1.20/commons-compress-1.20.jar
-
-#exporting apache home dir
-export APACHE_HOME=/usr/local/Apache
-
-#pythonpath to ~/.local/bin
-export PYTHONPATH=${PYTHONPATH}:~/.local/bin/
-
-#Exporting lang
-export LANG='en_US.UTF-8'
-
-#Stopping Control-Q and Control-S from annoying me 
-stty -ixon
-
-~/dev/programming/scripts/bashinfo/bashinfo.sh
-todo
-
-#My own script for teleporting
-source ~/dev/programming/bash/zap/src/zap.sh

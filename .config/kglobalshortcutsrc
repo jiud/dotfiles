@@ -35,10 +35,8 @@ display=Display\t,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{32ace780-e89e-4f5c-af51-44d6fe1ece06}=Ctrl+Alt+T,none,Launch Konsole
 {808cb5d3-6391-4143-890c-e29513e3ee4c}=Meta+Return,none,Kitty
 {c73c6ef9-3cec-4d17-a4ff-2411dd48899d}=Meta+D,none,Rofi
-{d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Alt+M,none,Search
 
 [kmix]
 _k_friendly_name=Audio Volume

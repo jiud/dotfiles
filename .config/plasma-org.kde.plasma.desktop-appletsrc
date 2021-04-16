@@ -58,7 +58,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][193][Applets][200][Configuration]
-PreloadWeight=94
+PreloadWeight=100
 
 [Containments][193][Applets][200][Configuration][ConfigDialog]
 DialogHeight=540
@@ -69,7 +69,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][193][Applets][201][Configuration]
-PreloadWeight=61
+PreloadWeight=66
 
 [Containments][193][Applets][202]
 immutability=1
@@ -97,7 +97,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][193][Applets][226][Configuration]
-PreloadWeight=75
+PreloadWeight=100
 
 [Containments][193][ConfigDialog]
 DialogHeight=502
@@ -115,6 +115,7 @@ shownItems=birdtray,discord1,org.kde.plasma.battery,org.kde.plasma.notifications
 
 [Containments][2]
 ItemGeometriesHorizontal=
+ItemGeometriesVertical=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
 formfactor=0
 immutability=1
@@ -210,7 +211,7 @@ PreloadWeight=0
 
 [Containments][70][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=580
+ToolBoxButtonX=593
 ToolBoxButtonY=24
 sortMode=-1
 
@@ -222,8 +223,9 @@ Image=file:///home/dennis/media/pictures/coolImages/bliss.jpeg
 Color=0,0,0
 
 [Containments][70][Wallpaper][org.kde.image][General]
-FillMode=3
-Image=file:///home/dennis/media/pictures/coolImages/New_Piskel6_copy_1.png
+Color=41,43,47
+FillMode=1
+Image=file:///home/dennis/media/pictures/coolImages/shell.png
 SlidePaths=/usr/share/wallpapers
 
 [Containments][70][Wallpaper][org.kde.potd][General]
@@ -248,7 +250,7 @@ plugin=org.kde.plasma.colorpicker
 PreloadWeight=100
 
 [Containments][93][Applets][188][Configuration][General]
-history=#1b1d1e,#2a2e32,#31363b,#2a2e32,#31363b,#282c30,#40464d,#a2a4a7,#201f27
+history=#252a34,#1b1d1e,#2a2e32,#31363b,#2a2e32,#31363b,#282c30,#40464d,#a2a4a7
 
 [Containments][93][Applets][189]
 immutability=1
