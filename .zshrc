@@ -1,3 +1,79 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/dennis/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS="true"
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
+# COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+HIST_STAMPS="dd/mm/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=3000
@@ -52,12 +128,12 @@ alias termdots="nvim ~/.config/kitty/kitty.conf"
 #Needed for intended kitty terminal behevior on servers
 #alias ssh="kitty +kitten ssh"
 
-#making a function to display git branch on PS1 
+#Making a function to display git branch on PS1 
 git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
 }
 
-export PS1=$'%F{yellow}╭─%F{blue}   %F{green} $(git_branch) %F{blue}%~\n%F{yellow}╰──🮲🮳[%(?.√.?%F{red}%?)%F{yellow}]\$ %F{white}'
+export PS1=$'%F{yellow}╭─%F{blue}   %F{green}$(git_branch)%F{blue}%~\n%F{yellow}╰──🮲🮳[%(?.%F{blue}√.%F{red}returned-%?)%F{yellow}]\$ %F{white}'
 
 #Setting the system's default editor
 #export ALTERNATE_EDITOR="emacs"
@@ -66,3 +142,27 @@ export EDITOR="nvim"
 
 #This the environment variables for pfetch 
 export PF_INFO="os kernel memory uptime pkgs"
+
+export PF_SEP=""
+export PF_COL2=3
+
+#antialias fonts in java apps
+#export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
+
+#exporting apache poi and apache commons for java
+#export CLASSPATH=/usr/share/poi-4.1.2/poi-4.1.2.jar:/usr/share/poi-4.1.2/poi-ooxml-schemas-4.1.2.jar:/usr/share/poi-4.1.2/poi-ooxml-4.1.2.jar:/usr/share/poi-4.1.2/ooxml-lib/curvesapi-1.06.jar:/usr/share/poi-4.1.2/ooxml-lib/xmlbeans-3.1.0.jar:/usr/local/Apache/commons-collections4-4.4/commons-collections4-4.4.jar:/usr/local/Apache/commons-io-2.7/commons-io-2.7.jar:/usr/local/Apache/commons-compress-1.20/commons-compress-1.20.jar
+
+#exporting apache home dir
+export APACHE_HOME=/usr/local/Apache
+
+#pythonpath to ~/.local/bin
+export PYTHONPATH=${PYTHONPATH}:~/.local/bin/
+
+#Exporting lang
+export LANG='en_US.UTF-8'
+
+~/dev/programming/scripts/bashinfo/bashinfo.sh
+todo
+
+#My own script for teleporting
+source ~/dev/programming/shell/zap/src/zap.sh
