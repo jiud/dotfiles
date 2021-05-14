@@ -62,3 +62,6 @@ set listchars=tab:>.,trail:·
 
 "IF TABS ARE THE INDENTS, this displays them 
 "set lcs=tab:\│\  
+
+"
+set noshowmode

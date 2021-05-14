@@ -19,6 +19,11 @@ Rows=1
 [Effect-Blur]
 NoiseStrength=0
 
+[Effect-Glide]
+Duration=10
+InDistance=45
+OutDistance=40
+
 [Effect-PresentWindows]
 BorderActivateAll=1
 
@@ -30,15 +35,22 @@ TopLeft=None
 
 [NightColor]
 Active=true
+EveningBeginFixed=1500
 LatitudeAuto=37.9842
 LongitudeAuto=23.7353
+Mode=Times
+MorningBeginFixed=0600
 NightTemperature=4100
 
 [Plugins]
 blurEnabled=false
 forceblurEnabled=false
+glideEnabled=true
 krohnkiteEnabled=true
+kwin4_effect_eyeonscreenEnabled=true
+kwin4_effect_fadeEnabled=false
 kwin4_effect_squashEnabled=false
+kwin4_effect_windowapertureEnabled=false
 magiclampEnabled=true
 minimizeallEnabled=false
 synchronizeskipswitcherEnabled=false
@@ -61,4 +73,5 @@ ElectricBorderDelay=100
 FocusPolicy=FocusFollowsMouse
 
 [org.kde.kdecoration2]
-ButtonsOnRight=X
+ButtonsOnLeft=MFS
+ButtonsOnRight=LIAX
