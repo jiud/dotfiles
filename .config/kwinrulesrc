@@ -2,8 +2,10 @@
 update_info=kwinrules.upd:replace-placement-string-to-enum
 
 [1]
-Description=New window settings
-types=4
+Description=Change decoration on Konsole
+decocolor=BreezeBlack
+decocolorrule=2
+wmclass=konsole konsole
 wmclasscomplete=true
 wmclassmatch=1
 

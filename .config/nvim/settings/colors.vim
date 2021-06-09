@@ -22,6 +22,13 @@ let g:airline_theme='transparent'
 "Since I use the default theme, the following makes gitgutter transparent
 :highlight SignColumn guibg=transparent
 
+"Making the glyphs color coded
+augroup my-glyph-palette
+  autocmd! *
+  autocmd FileType fern call glyph_palette#apply()
+  autocmd FileType nerdtree,startify call glyph_palette#apply()
+augroup END
+
 "Default theme tweaks
 :hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=#2f222c
 :highlight LineNr              guifg=#f48024

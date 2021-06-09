@@ -1,4 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/dennis/dev/work/cms-promo/NGA_SILVERBIRD_Mega_Promo/views'
+let g:netrw_dirhist_3='/home/dennis/dev/work/cms-promo/GHA_VODAFONE_Big_Winners/views'
 let g:netrw_dirhist_2='/home/dennis/uniBackup/classes/Texniti_Noimosini/Γ-ΕΡΓΑΣΤΗΡΙΟ/1-Υλικό για Εργασία τρέχοντος εξαμήνου/Parking_python'
 let g:netrw_dirhist_1='/home/dennis/work/cms-promo/GNB_MTN_Mega_Promo/views'

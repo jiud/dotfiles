@@ -27,7 +27,7 @@ set shiftwidth=4
 "Searching is not case sensitive
 set ignorecase
 
-"Searching with a capital letter in the query makes the search case sensitive
+"Searching with a capital letter in the query makes the search case
 set smartcase
 
 "Always use spaces for indentation
@@ -60,8 +60,14 @@ set list
 "Showing trailing spaces and tabs as specific characters (default: interpunct)
 set listchars=tab:>.,trail:·
 
+"Highlighting Column 80 (for convetions in some languages)
+set colorcolumn=80
+
 "IF TABS ARE THE INDENTS, this displays them 
 "set lcs=tab:\│\  
+
+"Enabling file type detection
+filetype on
 
 "
 set noshowmode

@@ -19,100 +19,128 @@ ColorAmount=0.025
 ColorEffect=2
 ContrastAmount=0.1
 ContrastEffect=2
-Enable=true
+Enable=false
 IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=77,77,77
+BackgroundAlternate=30,87,116
 BackgroundNormal=49,54,59
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=155,89,182
 
 [Colors:Complementary]
-BackgroundAlternate=59,64,69
+BackgroundAlternate=30,87,116
+BackgroundNormal=42,46,50
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header]
+BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
-DecorationFocus=30,146,255
-DecorationHover=61,174,230
-ForegroundActive=246,116,0
-ForegroundInactive=175,176,179
-ForegroundLink=61,174,230
-ForegroundNegative=237,21,21
-ForegroundNeutral=201,206,59
-ForegroundNormal=239,240,241
-ForegroundPositive=17,209,22
-ForegroundVisited=61,174,230
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
+
+[Colors:Header][Inactive]
+BackgroundAlternate=49,54,59
+BackgroundNormal=42,46,50
+DecorationFocus=61,174,233
+DecorationHover=61,174,233
+ForegroundActive=61,174,233
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
+ForegroundNegative=218,68,83
+ForegroundNeutral=246,116,0
+ForegroundNormal=252,252,252
+ForegroundPositive=39,174,96
+ForegroundVisited=155,89,182
 
 [Colors:Selection]
-BackgroundAlternate=29,153,243
-BackgroundNormal=35,102,135
+BackgroundAlternate=30,87,116
+BackgroundNormal=41,118,157
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=252,252,252
-ForegroundInactive=239,240,241
+ForegroundInactive=161,169,177
 ForegroundLink=253,188,75
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
-ForegroundVisited=189,195,199
+ForegroundVisited=155,89,182
 
 [Colors:Tooltip]
-BackgroundAlternate=77,77,77
+BackgroundAlternate=42,46,50
 BackgroundNormal=49,54,59
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=155,89,182
 
 [Colors:View]
-BackgroundAlternate=49,54,59
-BackgroundNormal=35,38,41
+BackgroundAlternate=35,38,41
+BackgroundNormal=27,30,32
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=155,89,182
 
 [Colors:Window]
-BackgroundAlternate=77,77,77
-BackgroundNormal=49,54,59
+BackgroundAlternate=49,54,59
+BackgroundNormal=42,46,50
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
-ForegroundInactive=189,195,199
-ForegroundLink=41,128,185
+ForegroundInactive=161,169,177
+ForegroundLink=29,153,243
 ForegroundNegative=218,68,83
 ForegroundNeutral=246,116,0
-ForegroundNormal=239,240,241
+ForegroundNormal=252,252,252
 ForegroundPositive=39,174,96
-ForegroundVisited=127,140,141
+ForegroundVisited=155,89,182
 
 [DialogIcons]
 Size=24
 
 [DirSelect Dialog]
-DirSelectDialog Size=980,659
-History Items[$e]=file:$HOME/downloads/temp_tasks/uni/SEEDUbuntu-16.04-32bit,file:$HOME/dev/tools/virtualbox_vms/SEEDUbuntu-16.04-32bit
+DirSelectDialog Size=850,596
+History Items[$e]=file:$HOME/media/music/Playboi-Carti,file:$HOME/media/music/Playboi-Carti/Playboi Carti - Whole Lotta Red (2020) Mp3 320kbps [PMEDIA] ⭐️,file:$HOME/media/music/Suicideboys/SuicideBoys - Kill Yourself Saga Collection (2017) [iTunes] [XannyFamily],file:$HOME/media/music/Travis-Scott/Travis Scott - ASTROWORLD (2018) [FLAC] [Hunter]/Travis Scott - ASTROWORLD (2018) [FLAC],file:$HOME/media/music/LIFTS,file:$HOME/media/music/Playboi-Carti/Playboi Carti - Die Lit (2018) Mp3 (320kbps) [Hunter],file:$HOME/media/music/Suicideboys/SuicideBoys - Kill Yourself Saga Collection (2017) [iTunes] [XannyFamily]/Kill Yourself Sagas XI - XV,file:$HOME/media/music/Travis-Scott/Travis Scott - ASTROWORLD (2018) [FLAC] [Hunter]/Travis Scott - ASTROWORLD (2018) [FLAC],file:$HOME/media/music/Travis-Scott/Travis Scott - ASTROWORLD (2018) [FLAC] [Hunter]/Travis Scott - ASTROWORLD (2018) [FLAC],file:$HOME/media/music/Death-Grips/The Complete Death Grips Discography [FLAC]/EPs,file:$HOME/media/music/Death-Grips/The Complete Death Grips Discography [FLAC],file:$HOME/media/music/LIFTS,file:$HOME/media/music/NEANDERTHAL,file:$HOME/media/music/NEANDERTHAL,file:$HOME/downloads/phone-backup,file:$HOME/downloads/phone-backup,file:$HOME/downloads,file:$HOME/media/music/Suicideboys/SuicideBoys - Stop Staring at the Shadows (2020) [iTunes] [XannyFamily],file:$HOME/media/music/Suicideboys,file:$HOME/media/music/Suicideboys,file:$HOME/media/music/Suicideboys/$$uicideboy$$ - STOP STARING AT THE SHADOWS (2020) Mp3 320kbps Album [PMEDIA] ⭐️,file:$HOME/media/music/Travis Scott - ASTROWORLD (2018) [FLAC] [Hunter]/Travis Scott - ASTROWORLD (2018) [FLAC],file:$HOME/downloads/temp_tasks/uni/SEEDUbuntu-16.04-32bit,file:$HOME/dev/tools/virtualbox_vms/SEEDUbuntu-16.04-32bit
 
 [General]
 BrowserApplication=brave-browser.desktop
@@ -123,11 +151,11 @@ XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
 fixed=LiterationMono Nerd Font,9,-1,5,50,0,0,0,0,0
-font=Fira Sans,9,-1,5,50,0,0,0,0,0
-menuFont=Fira Sans,9,-1,5,50,0,0,0,0,0
+font=Open Sans,9,-1,5,50,0,0,0,0,0
+menuFont=Open Sans,9,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
-smallestReadableFont=Fira Sans,8,-1,5,50,0,0,0,0,0
-toolBarFont=Fira Sans,9,-1,5,50,0,0,0,0,0
+smallestReadableFont=scientifica,8,-1,5,57,0,0,0,0,0,Medium
+toolBarFont=xos4 Terminus,9,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
@@ -137,12 +165,11 @@ Theme=Papirus-Dark
 AnimationDurationFactor=0.5
 ColorScheme=Breeze
 contrast=4
-widgetStyle=Oxygen
 
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
@@ -173,10 +200,10 @@ FullScreen=
 
 [WM]
 FakeEntryToKeepThisGroup=true
-activeBackground=16,16,16
-activeBlend=255,255,255
-activeFont=Montserrat Medium,9,-1,5,57,0,0,0,0,0,Regular
-activeForeground=239,240,241
-inactiveBackground=17,17,17
-inactiveBlend=75,71,67
-inactiveForeground=127,140,141
+activeBackground=49,54,59
+activeBlend=252,252,252
+activeFont=Adobe Helvetica,9,-1,5,50,0,0,0,0,0
+activeForeground=252,252,252
+inactiveBackground=42,46,50
+inactiveBlend=161,169,177
+inactiveForeground=161,169,177

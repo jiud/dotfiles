@@ -22,7 +22,8 @@ Plug 'vim-airline/vim-airline'
 "Sidebar for file navigation
 Plug 'preservim/nerdtree'
 
-Plug 'NLKNguyen/papercolor-theme'
+"For coloring in devicons
+Plug 'lambdalisue/glyph-palette.vim'
 
 "A lot of themes
 Plug 'chriskempson/base16-vim'

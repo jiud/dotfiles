@@ -43,7 +43,7 @@ MorningBeginFixed=0600
 NightTemperature=4100
 
 [Plugins]
-blurEnabled=false
+blurEnabled=true
 forceblurEnabled=false
 glideEnabled=true
 krohnkiteEnabled=true
@@ -55,7 +55,6 @@ magiclampEnabled=true
 minimizeallEnabled=false
 synchronizeskipswitcherEnabled=false
 videowallEnabled=false
-wobblywindowsEnabled=true
 
 [Script-forceblur]
 patterns=alacritty\nkitty

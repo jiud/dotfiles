@@ -107,9 +107,8 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME' #easi
 alias ls='lsd' #alias for lsd
 alias untar='tar -zxvf' #extract tar file to current directory quickly 
 alias vim='nvim' #replacing vim with nvim
-
 alias f='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' #making ranger dump you in the directory you exit from!
-alias dup='kitty & disown $!' #start another window in the current dir and disown it
+alias dup='konsole & disown $!' #start another window in the current dir and disown it
 alias cleanup='pacman -Qdtq > pkgsForCleanup' # list potentially unneeded packages in a file, actually remove them with 'cat pkgs | pacman -Rns -' 
 alias update='echo -e "\033[1;33m" && curl -s https://www.archlinux.org/feeds/news/ | xmllint --xpath //item/title\ \|\ //item/pubDate /dev/stdin | sed "s/\(<title\|<\/title>\|<pubDate>\|<\/pubDate>\)//g" | head -n 6 | sed "s/+0000//g" && echo -e "\033[0m" && echo -e "\n\033[1;33m***\033[0m Performing \033[1;33mFULL SYSTEM UPGRADE\033[0m, check for \033[0;31mMANUAL INTERVENTION\033[0m on the news ↑ \033[1;33m***\033[0m\n" && yay -Syu'
 #^^^ Command to update but print arch news for needing manual interferance etc on top^^^
@@ -133,7 +132,7 @@ git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/( \1)/'
 }
 
-export PS1=$'%F{yellow}╱╱%F{blue}   %F{green}$(git_branch)%F{blue}%~\n%F{yellow}╲╲ 🮲🮳[%(?.%F{blue}√.%F{red}returned-%?)%F{yellow}]\$ %F{white}'
+export PS1=$'%F{yellow}╱╱%F{blue}   %F{green}$(git_branch)%F{blue}%~\n%F{yellow}╲╲🮲🮳[[%(?.%F{blue}√.%F{red}returned-%?)%F{yellow}]\$ %F{white}'
 
 #Setting the system's default editor
 #export ALTERNATE_EDITOR="emacs"

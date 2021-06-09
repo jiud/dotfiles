@@ -1,42 +1,14 @@
-colors:
-  # Default colors
-  primary:
-    background: '0x1B1D1E'
-    foreground: '0xf8f8f2'
-
-  # Normal colors
-  normal:
-    black:   '0x272822'
-    red:     '0xf92672'
-    green:   '0xa6e22e'
-    yellow:  '0xf4bf75'
-    blue:    '0x66d9ef'
-    magenta: '0xae81ff'
-    cyan:    '0xa1efe4'
-    white:   '0xf8f8f2'
-
-  # Bright colors
-  bright:
-    black:   '0x75715e'
-    red:     '0xf92672'
-    green:   '0xa6e22e'
-    yellow:  '0xf4bf75'
-    blue:    '0x66d9ef'
-    magenta: '0xae81ff'
-    cyan:    '0xa1efe4'
-    white:   '0xf9f8f5'
-
 background_opacity: 0.9
 
 font:
   # Normal (roman) font face
   normal:
   
-    family: "FuraCode Nerd Font"
+    family: "DejaVu Sans Mono"
 
     # The `style` can be specified to pick a specific face.
     style: Regular
-  size: 9
+  size: 10
 
   # Bold font face
   bold:
@@ -44,11 +16,11 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: "FuraCode Nerd Font"
+    family: "Fira Code"
 
     # The `style` can be specified to pick a specific face.
-    style: Medium
-  size: 9
+    style: Bold
+  size: 10
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
