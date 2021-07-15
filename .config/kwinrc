@@ -2,6 +2,7 @@
 update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-effect-to-js,kwin.upd:port-scale-effect-to-js,kwin.upd:port-dimscreen-effect-to-js,kwin.upd:auto-bordersize,kwin.upd:animation-speed,kwin.upd:desktop-grid-click-behavior,kwin.upd:no-swap-encourage
 
 [Compositing]
+GLTextureFilter=1
 OpenGLIsUnsafe=false
 
 [Desktops]
@@ -40,7 +41,7 @@ LatitudeAuto=37.9842
 LongitudeAuto=23.7353
 Mode=Times
 MorningBeginFixed=0600
-NightTemperature=4100
+NightTemperature=4300
 
 [Plugins]
 blurEnabled=true

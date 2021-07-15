@@ -7,7 +7,7 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 RightButton;NoModifier=org.kde.contextmenu
 
 [AppletGlobals][org.kde.plasma.comic]
-lastUpdate=2021,3,8,19,50,42.523
+lastUpdate=2021,6,30,18,26,51.708
 updateInterval=3
 
 [Containments][193]
@@ -19,8 +19,16 @@ location=3
 plugin=org.kde.plasma.private.systemtray
 wallpaperplugin=org.kde.image
 
+[Containments][193][Applets][194]
+immutability=1
+plugin=org.kde.plasma.keyboardlayout
+
 [Containments][193][Applets][194][Configuration]
-PreloadWeight=42
+PreloadWeight=34
+
+[Containments][193][Applets][194][Configuration][ConfigDialog]
+DialogHeight=372
+DialogWidth=480
 
 [Containments][193][Applets][195]
 immutability=1
@@ -34,21 +42,21 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][193][Applets][196][Configuration]
-PreloadWeight=68
+PreloadWeight=0
 
 [Containments][193][Applets][197]
 immutability=1
 plugin=org.kde.plasma.printmanager
 
 [Containments][193][Applets][197][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][193][Applets][198]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
 
 [Containments][193][Applets][198][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][193][Applets][199]
 immutability=1
@@ -62,7 +70,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][193][Applets][200][Configuration]
-PreloadWeight=71
+PreloadWeight=44
 
 [Containments][193][Applets][200][Configuration][ConfigDialog]
 DialogHeight=540
@@ -73,14 +81,14 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][193][Applets][201][Configuration]
-PreloadWeight=42
+PreloadWeight=2
 
 [Containments][193][Applets][202]
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][193][Applets][202][Configuration]
-PreloadWeight=27
+PreloadWeight=49
 
 [Containments][193][Applets][203][Configuration]
 PreloadWeight=42
@@ -90,7 +98,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][193][Applets][204][Configuration]
-PreloadWeight=72
+PreloadWeight=21
 
 [Containments][193][Applets][204][Configuration][ConfigDialog]
 DialogHeight=540
@@ -101,21 +109,21 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][193][Applets][226][Configuration]
-PreloadWeight=56
+PreloadWeight=14
 
 [Containments][193][Applets][227]
 immutability=1
 plugin=org.kde.kdeconnect
 
 [Containments][193][Applets][227][Configuration]
-PreloadWeight=10
+PreloadWeight=0
 
 [Containments][193][Applets][229]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][193][Applets][229][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][193][ConfigDialog]
 DialogHeight=502
@@ -125,11 +133,11 @@ DialogWidth=720
 PreloadWeight=0
 
 [Containments][193][General]
-extraItems=org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.kdeconnect
-hiddenItems=org.kde.plasma.devicenotifier,KDE Daemon
+extraItems=org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.kdeconnect,org.kde.plasma.notifications
+hiddenItems=org.kde.plasma.devicenotifier,discord1,KDE Daemon,org.kde.plasma.keyboardlayout
 iconSize=3
 knownItems=RSS_feeds,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.devicenotifier,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.kdeconnect
-shownItems=birdtray,discord1,org.kde.plasma.battery,org.kde.plasma.notifications
+shownItems=birdtray,org.kde.plasma.battery,org.kde.plasma.notifications
 
 [Containments][2]
 ItemGeometriesHorizontal=
@@ -158,6 +166,7 @@ Image=file:///home/dennis/dev/gits/tiles-and-such/Anime/222.gif
 SlidePaths=/usr/share/wallpapers
 
 [Containments][231]
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
 formfactor=0
@@ -168,16 +177,15 @@ plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
 [Containments][231][ConfigDialog]
-DialogHeight=779
-DialogWidth=960
+DialogHeight=633
+DialogWidth=1283
 
 [Containments][231][Configuration]
 PreloadWeight=0
 
 [Containments][231][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=600
-ToolBoxButtonY=30
+ToolBoxButtonX=607
 sortMode=-1
 
 [Containments][231][Wallpaper][com.github.zren.inactiveblur][General]
@@ -188,9 +196,10 @@ Image=file:///home/dennis/media/pictures/coolImages/bliss.jpeg
 Color=0,0,0
 
 [Containments][231][Wallpaper][org.kde.image][General]
-Color=28,32,34
-FillMode=3
-Image=file:///home/dennis/dev/gits/tiles-and-such/[J] Retro Patterns/Patterns/pattern_133.gif
+Blur=true
+Color=246,236,224
+FillMode=0
+Image=file:///usr/share/wallpapers/Elarun/contents/images/2560x1600.png
 SlidePaths=/usr/share/wallpapers
 
 [Containments][231][Wallpaper][org.kde.potd][General]
@@ -199,6 +208,8 @@ FillMode=2
 Provider=unsplash
 
 [Containments][39]
+ItemGeometriesHorizontal=
+ItemGeometriesVertical=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
 formfactor=0
 immutability=1
@@ -223,6 +234,7 @@ Image=file:///home/dennis/media/pictures/cool_images/wallpapers/abstract/default
 SlidePaths=/usr/share/wallpapers
 
 [Containments][66]
+ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 ItemGeometriesVertical=
 activityId=f8212949-d13d-4b08-baeb-d9b9514c1325
@@ -245,8 +257,7 @@ ToolBoxButtonState=topcenter
 ToolBoxButtonX=152
 
 [Containments][66][Wallpaper][org.kde.image][General]
-FillMode=3
-Image=file:///home/dennis/dev/gits/tiles-and-such/Anime/222.gif
+Image=file:///usr/share/wallpapers/Next/contents/images/1920x1080.png
 SlidePaths=/usr/share/wallpapers
 
 [Containments][93]
@@ -263,10 +274,10 @@ immutability=1
 plugin=org.kde.plasma.colorpicker
 
 [Containments][93][Applets][188][Configuration]
-PreloadWeight=73
+PreloadWeight=0
 
 [Containments][93][Applets][188][Configuration][General]
-history=#ffcc00,#2b304e,#ff7906,#6a3014,#288fff,#28bbff,#5e671e,#3b9acd,#35414a
+history=#31363b,#1d2023,#8e5e2c,#31363b,#fcfcfc,#2a2e32,#31363b,#ffae57,#2a2e32
 
 [Containments][93][Applets][189]
 immutability=1
@@ -280,43 +291,62 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][93][Applets][189][Configuration][General]
-displayedText=Name
+showOnlyCurrentScreen=true
+showWindowIcons=true
 
 [Containments][93][Applets][190]
 immutability=1
 plugin=org.kde.plasma.eventcalendar
 
 [Containments][93][Applets][190][Configuration]
-PreloadWeight=100
+PreloadWeight=92
+
+[Containments][93][Applets][190][Configuration][Agenda]
+agendaCondensedAllDayEvent=false
+agendaWeatherShowText=true
 
 [Containments][93][Applets][190][Configuration][Calendar]
-firstDayOfWeek=2
+firstDayOfWeek=0
+monthEventBadgeType=bottomBar
+monthHeightSingleColumn=303
 monthShowWeekNumbers=true
 
 [Containments][93][Applets][190][Configuration][ConfigDialog]
-DialogHeight=540
+DialogHeight=626
 DialogWidth=720
 
 [Containments][93][Applets][190][Configuration][Events]
 enabledCalendarPlugins=
 
 [Containments][93][Applets][190][Configuration][General]
-clockFontFamily=Manrope SemiBold
-clockLine2HeightRatio=0.32
-clockTimeFormat1='<font color="#3daee9">'dddd d MMM'</font>' HH:mm
+clockFontFamily=artwiz smoothansi
+clockLine2HeightRatio=0.33999999999999997
+clockTimeFormat1='<font color="#3daee9">'dddd MMM d'</font>' HH:mm
+clockTimeFormat2=hh:mm
 v71Migration=true
 v72Migration=true
 
 [Containments][93][Applets][190][Configuration][Google Calendar]
-calendarList=W10=
-tasklistList=W10=
+accessToken=ya29.a0ARrdaM9EjaNsjBWSTghJd__RkxfsPK0MxExrjANAvUjLJTEF0esC29Tn0n4TybT4D_3vMpwApnLtmT9nwa7q6BtFsWQUjRTcgmDQP3Olozbs7FfiniI0cO6xuYZHvVkDMLwVhLMaGJCRX4pyxsHBDmWN1HHNto4
+accessTokenExpiresAt=2881280265
+accessTokenType=Bearer
+calendarIdList=dionisishahaha@gmail.com
+calendarList=W3sia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU3NzIwMTQwMTIzMDAwMFwiIiwiaWQiOiJlbC5ncmVlayNob2xpZGF5QGdyb3VwLnYuY2FsZW5kYXIuZ29vZ2xlLmNvbSIsInN1bW1hcnkiOiLOlM65zrHOus6/z4DOrc+CIM+Dz4TOt869IM6VzrvOu86szrTOsSIsImRlc2NyaXB0aW9uIjoizpHPgc6zzq/Otc+CIM66zrHOuSDOtc6/z4HPhM6tz4Igz4PPhM63zr0gzpXOu867zqzOtM6xIiwidGltZVpvbmUiOiJFdXJvcGUvQXRoZW5zIiwic3VtbWFyeU92ZXJyaWRlIjoizpTOuc6xzrrOv8+Azq3PgiDPg8+EzrfOvSDOlc67zrvOrM60zrEiLCJjb2xvcklkIjoiOCIsImJhY2tncm91bmRDb2xvciI6IiMxNmE3NjUiLCJmb3JlZ3JvdW5kQ29sb3IiOiIjMDAwMDAwIiwiYWNjZXNzUm9sZSI6InJlYWRlciIsImRlZmF1bHRSZW1pbmRlcnMiOltdLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fSx7ImtpbmQiOiJjYWxlbmRhciNjYWxlbmRhckxpc3RFbnRyeSIsImV0YWciOiJcIjE1NzcyMDE0MDIxMDgwMDBcIiIsImlkIjoiZW4uZ3JlZWsjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20iLCJzdW1tYXJ5IjoiSG9saWRheXMgaW4gR3JlZWNlIiwiZGVzY3JpcHRpb24iOiJIb2xpZGF5cyBhbmQgT2JzZXJ2YW5jZXMgaW4gR3JlZWNlIiwidGltZVpvbmUiOiJFdXJvcGUvQXRoZW5zIiwic3VtbWFyeU92ZXJyaWRlIjoiSG9saWRheXMgaW4gR3JlZWNlIiwiY29sb3JJZCI6IjE3IiwiYmFja2dyb3VuZENvbG9yIjoiIzlhOWNmZiIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJhY2Nlc3NSb2xlIjoicmVhZGVyIiwiZGVmYXVsdFJlbWluZGVycyI6W10sImNvbmZlcmVuY2VQcm9wZXJ0aWVzIjp7ImFsbG93ZWRDb25mZXJlbmNlU29sdXRpb25UeXBlcyI6WyJoYW5nb3V0c01lZXQiXX19LHsia2luZCI6ImNhbGVuZGFyI2NhbGVuZGFyTGlzdEVudHJ5IiwiZXRhZyI6IlwiMTU5Mjk1Mjg0NDg4ODAwMFwiIiwiaWQiOiJkaW9uaXNpc2hhaGFoYUBnbWFpbC5jb20iLCJzdW1tYXJ5IjoiZGlvbmlzaXNoYWhhaGFAZ21haWwuY29tIiwidGltZVpvbmUiOiJFdXJvcGUvQXRoZW5zIiwiY29sb3JJZCI6IjE0IiwiYmFja2dyb3VuZENvbG9yIjoiIzlmZTFlNyIsImZvcmVncm91bmRDb2xvciI6IiMwMDAwMDAiLCJzZWxlY3RlZCI6dHJ1ZSwiYWNjZXNzUm9sZSI6Im93bmVyIiwiZGVmYXVsdFJlbWluZGVycyI6W3sibWV0aG9kIjoicG9wdXAiLCJtaW51dGVzIjozMH1dLCJub3RpZmljYXRpb25TZXR0aW5ncyI6eyJub3RpZmljYXRpb25zIjpbeyJ0eXBlIjoiZXZlbnRDcmVhdGlvbiIsIm1ldGhvZCI6ImVtYWlsIn0seyJ0eXBlIjoiZXZlbnRDaGFuZ2UiLCJtZXRob2QiOiJlbWFpbCJ9LHsidHlwZSI6ImV2ZW50Q2FuY2VsbGF0aW9uIiwibWV0aG9kIjoiZW1haWwifSx7InR5cGUiOiJldmVudFJlc3BvbnNlIiwibWV0aG9kIjoiZW1haWwifV19LCJwcmltYXJ5Ijp0cnVlLCJjb25mZXJlbmNlUHJvcGVydGllcyI6eyJhbGxvd2VkQ29uZmVyZW5jZVNvbHV0aW9uVHlwZXMiOlsiaGFuZ291dHNNZWV0Il19fV0=
+refreshToken=1//09NTrcobBsynfCgYIARAAGAkSNwF-L9IrJJvxwGtrgkEIDYtDxppAzEHJ58j63sQlS3t88QYlVC9F30bZsu7lUipH7M0PucAmaMU
+sessionClientId=391436299960-k0s16nm589meovhoblpcquqgbbrena17.apps.googleusercontent.com
+sessionClientSecret=Gdr_7lKIQuGBD4Up3MOiw-7i
+tasklistIdList=MDk3NDIwMjEyNjE3NTg5MzUwNzE6MDow
+tasklistList=W3sia2luZCI6InRhc2tzI3Rhc2tMaXN0IiwiaWQiOiJNRGszTkRJd01qRXlOakUzTlRnNU16VXdOekU2TURvdyIsImV0YWciOiJcIkxURXpPREkxT0RBek1nXCIiLCJ0aXRsZSI6Ik15IFRhc2tzIiwidXBkYXRlZCI6IjIwMjEtMDMtMDNUMTE6MDQ6MDQuODcwWiIsInNlbGZMaW5rIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vdGFza3MvdjEvdXNlcnMvQG1lL2xpc3RzL01EazNOREl3TWpFeU5qRTNOVGc1TXpVd056RTZNRG93In1d
+
+[Containments][93][Applets][190][Configuration][Weather]
+openWeatherMapCityId=264371
 
 [Containments][93][Applets][192]
 immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][93][Applets][192][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 SystrayContainmentId=193
 
 [Containments][93][Applets][210]
@@ -324,7 +354,7 @@ immutability=1
 plugin=org.kde.plasma.systemmonitor
 
 [Containments][93][Applets][210][Configuration]
-PreloadWeight=88
+PreloadWeight=0
 
 [Containments][93][Applets][210][Configuration][Appearance]
 chartFace=org.kde.ksysguard.horizontalbars
@@ -348,7 +378,7 @@ immutability=1
 plugin=RSS_feeds
 
 [Containments][93][Applets][213][Configuration]
-PreloadWeight=83
+PreloadWeight=58
 
 [Containments][93][Applets][213][Configuration][ConfigDialog]
 DialogHeight=540
@@ -365,7 +395,7 @@ immutability=1
 plugin=RSS_feeds
 
 [Containments][93][Applets][214][Configuration]
-PreloadWeight=68
+PreloadWeight=89
 
 [Containments][93][Applets][214][Configuration][ConfigDialog]
 DialogHeight=540
@@ -385,7 +415,7 @@ plugin=org.kde.plasma.panelspacer
 PreloadWeight=0
 
 [Containments][93][Applets][215][Configuration][General]
-length=545
+length=239
 
 [Containments][93][Applets][216]
 immutability=1
@@ -395,7 +425,7 @@ plugin=org.kde.plasma.panelspacer
 PreloadWeight=0
 
 [Containments][93][Applets][216][Configuration][General]
-length=395
+length=363
 
 [Containments][93][Applets][225]
 immutability=1
@@ -407,12 +437,22 @@ PreloadWeight=0
 [Containments][93][Applets][225][Configuration][General]
 launchers=
 
+[Containments][93][Applets][232]
+immutability=1
+plugin=org.kde.paneltransparencybutton
+
+[Containments][93][Applets][232][Configuration]
+PreloadWeight=0
+
+[Containments][93][Applets][232][Configuration][Appearance]
+transparencyEnabled=true
+
 [Containments][93][Applets][37]
 immutability=1
 plugin=org.kde.plasma.userswitcher
 
 [Containments][93][Applets][37][Configuration]
-PreloadWeight=100
+PreloadWeight=92
 
 [Containments][93][Applets][37][Configuration][ConfigDialog]
 DialogHeight=480
@@ -420,8 +460,8 @@ DialogWidth=640
 
 [Containments][93][Applets][37][Configuration][General]
 showFace=true
-showFullName=false
 showName=false
+showTechnicalInfo=true
 
 [Containments][93][Applets][92]
 immutability=1
@@ -435,14 +475,14 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][93][ConfigDialog]
-DialogHeight=83
+DialogHeight=82
 DialogWidth=1920
 
 [Containments][93][Configuration]
 PreloadWeight=0
 
 [Containments][93][General]
-AppletOrder=37;214;213;192;92;216;225;215;190;188;210;189
+AppletOrder=37;214;213;192;92;216;225;215;190;232;188;210;189
 
 [Containments160Appletsts][163][Configuration][General]
 launchers=
@@ -473,5 +513,5 @@ showName=false
 thumbnailRound=false
 
 [ScreenMapping]
-itemsOnDisabledScreens=1,11,desktop:/temp_backup,desktop:/home_bg_desktop(1).jpg,desktop:/FiraMono.zip,desktop:/phone-backup,desktop:/GFS_GARALDUS,desktop:/temp_images,desktop:/ergasia.odt,desktop:/20210514_025942.jpg,desktop:/home_bg_desktop.jpg,desktop:/20210514_025939.jpg,desktop:/temp_tasks
+itemsOnDisabledScreens=1,11,desktop:/home_bg_desktop(1).jpg,desktop:/phone-backup,desktop:/temp_images,desktop:/home_bg_desktop.jpg,desktop:/20210514_025942.jpg,desktop:/temp_tasks,desktop:/GFS_GARALDUS,desktop:/20210514_025939.jpg,desktop:/FiraMono.zip,desktop:/temp_backup,desktop:/ergasia.odt
 screenMapping=

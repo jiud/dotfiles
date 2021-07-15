@@ -1,9 +1,9 @@
-""       __ __           __    _           ___                 
+""       __ __           __    _           ___
 ""      / //_/__  __  __/ /_  (_)___  ____/ (_)___  ____ ______
 ""     / ,< / _ \/ / / / __ \/ / __ \/ __  / / __ \/ __ `/ ___/
-""    / /| /  __/ /_/ / /_/ / / / / / /_/ / / / / / /_/ (__  ) 
-""   /_/ |_\___/\__, /_.___/_/_/ /_/\__,_/_/_/ /_/\__, /____/  
-""             /____/                            /____/        
+""    / /| /  __/ /_/ / /_/ / / / / / /_/ / / / / / /_/ (__  )
+""   /_/ |_\___/\__, /_.___/_/_/ /_/\__,_/_/_/ /_/\__, /____/
+""             /____/                            /____/
 
 "For misclicks
 :command WQ wq
@@ -11,12 +11,28 @@
 :command W w
 :command Q q
 
-" Make Y yank till end of line
-nnoremap Y y$
 
-"For switching buffers 
+"Function for trimming the trailing whitespace.
+"Yanked from: https://vim.fandom.com/wiki/Remove_unwanted_spaces
+function TrimWhiteSpace()
+    %s/\s*$//
+    ''
+endfunction
+
+"Make the reindentation command remove traling white spaces too (whole file)
+nnoremap gg=G :call TrimWhiteSpace()<CR> gg=G :echo 'Trailing whitespace removed, Indentation fixed.'<CR>
+
+"Make Y yank till end of line
+nnoremap Y y$
+"Make x not yank, just delete (by yanking to black hole register)
+nnoremap x "_x
+
+"For switching buffers
 map <C-h> :bprev<CR>
 map <C-l> :bnext<CR>
+
+"Quickly display relative  line numbers or not (normal mode only)
+nnoremap <C-y> :set relativenumber!<CR>
 
 "For operating quickly in other languages, for example in Greek:
 "I have the 'ι' for insert mode, like 'i'

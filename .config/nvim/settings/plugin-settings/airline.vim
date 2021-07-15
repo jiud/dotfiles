@@ -5,7 +5,7 @@
 ""   /_/  |_/_/_/  /_/_/_/ /_/\___/
 
 "Enabling airline with powerline fonts
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 "Enabling airline for a better looking tabline
 let g:airline#extensions#tabline#enabled = 1
 

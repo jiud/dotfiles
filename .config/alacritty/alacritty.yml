@@ -1,39 +1,27 @@
-background_opacity: 0.9
+background_opacity: 0.98
 
 font:
   # Normal (roman) font face
   normal:
-  
-    family: "DejaVu Sans Mono"
-
-    # The `style` can be specified to pick a specific face.
+    family: "fira code nerd font"
     style: Regular
-  size: 10
-
+  size: 9
   # Bold font face
   bold:
     # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    family: "Fira Code"
-
-    # The `style` can be specified to pick a specific face.
+    family: "fira code nerd font"
     style: Bold
-  size: 10
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 2
-
+    y: 0
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   glyph_offset:
     x: 0
     y: 0
-
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 #
@@ -49,3 +37,15 @@ cursor:
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   unfocused_hollow: true
+colors:
+   primary:
+    background: '#31363b'
+    foreground: '#dfdfdf'
+window:
+    padding:
+        x: 3
+        y: 0
+    dynamic_padding: true
+    dimensions:
+     columns: 83
+     lines: 40

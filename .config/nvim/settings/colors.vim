@@ -17,7 +17,7 @@ set cursorline
 colorscheme default
 
 "Setting the airline colorscheme (can be different from overall colorscheme)
-let g:airline_theme='transparent'
+let g:airline_theme='monochrome'
 
 "Since I use the default theme, the following makes gitgutter transparent
 :highlight SignColumn guibg=transparent
@@ -30,9 +30,12 @@ augroup my-glyph-palette
 augroup END
 
 "Default theme tweaks
+"For dark theme
 :hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=#2f222c
-:highlight LineNr              guifg=#f48024
-:highlight CursorLineNr        guifg=#fA872A gui=italic
+"For light theme
+":hi CursorLine cterm=NONE ctermbg=grey ctermfg=white guibg=#dddddd
+:highlight LineNr              guifg=#51565b
+:highlight CursorLineNr        guifg=#51565b cterm=bold gui=bold
 :highlight Comment             guifg=#555555 cterm=italic gui=italic
 :highlight Visual              guibg=#f48024 guifg=#111111 cterm=italic gui=italic
 :highlight Identifier          guifg=#3b9acd

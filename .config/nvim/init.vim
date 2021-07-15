@@ -25,6 +25,7 @@ runtime settings/keybinds.vim
 
 "Initializing plugin custom settings
 runtime settings/plugin-settings/coc.vim
+runtime settings/plugin-settings/confortable-motion.vim
 runtime settings/plugin-settings/airline.vim
 runtime settings/plugin-settings/indentLine.vim
 runtime settings/plugin-settings/MatchTagAlways.vim

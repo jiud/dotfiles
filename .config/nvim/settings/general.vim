@@ -15,14 +15,14 @@ set clipboard+=unnamedplus
 "Foldmethod set to manual
 set foldmethod=manual
 
-"Line numbers on
-set number
-
 "Line numbers are relative to the current cursor line 
 "(useful for yanking and cutting)
-set relativenumber
+"set relativenumber
 
 set shiftwidth=4
+
+"Making the scrolling offset some lines
+let &scrolloff = &lines / 6
 
 "Searching is not case sensitive
 set ignorecase

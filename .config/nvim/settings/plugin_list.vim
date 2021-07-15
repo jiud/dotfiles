@@ -1,9 +1,9 @@
-""       ____  __            _           
+""       ____  __            _
 ""      / __ \/ /_  ______ _(_)___  _____
 ""     / /_/ / / / / / __ `/ / __ \/ ___/
-""    / ____/ / /_/ / /_/ / / / / (__  ) 
-""   /_/   /_/\__,_/\__, /_/_/ /_/____/  
-""                 /____/                
+""    / ____/ / /_/ / /_/ / / / / (__  )
+""   /_/   /_/\__,_/\__, /_/_/ /_/____/
+""                 /____/
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -16,7 +16,7 @@ call plug#begin('~/.config/nvim/plugged')
 "Themes for airline
 Plug 'vim-airline/vim-airline-themes'
 
-"Really cool status bar 
+"Really cool status bar
 Plug 'vim-airline/vim-airline'
 
 "Sidebar for file navigation
@@ -28,7 +28,7 @@ Plug 'lambdalisue/glyph-palette.vim'
 "A lot of themes
 Plug 'chriskempson/base16-vim'
 
-" Specific Themes 
+" Specific Themes
 
 "" Low constrast themes
 Plug 'rakr/vim-one'
@@ -53,7 +53,7 @@ Plug 'jdsimcoe/hyper.vim'
 Plug 'airblade/vim-gitgutter'
 
 "Git command integration on vim, use git commands within vim (with :Git <command> primarily)
-Plug 'tpope/vim-fugitive' 
+Plug 'tpope/vim-fugitive'
 
 "
 "
@@ -90,7 +90,7 @@ Plug 'godlygeek/Tabular'
 "
 
 "Syntax for mustache and handlebars code
-Plug  'jsit/vim-mustache-handlebars' 
+Plug  'jsit/vim-mustache-handlebars'
 
 "highlight html-like tags
 Plug 'Valloric/MatchTagAlways'
@@ -105,10 +105,10 @@ Plug 'Valloric/MatchTagAlways'
 Plug 'yuttie/comfortable-motion.vim'
 
 "Zen mode on vim
-Plug 'junegunn/goyo.vim' 
+"Plug 'junegunn/goyo.vim'
 
 "Devicons in nerdtree and airline
-"NOTE: ALWAYS LOAD THIS LAST 
+"NOTE: ALWAYS LOAD THIS LAST
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()

@@ -6,10 +6,10 @@ command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
 interval=3600
 color=#A4C2F4
 
-[temperature]
-command=$SCRIPT_DIR/temperature
-label=Temp : 
-interval=10
+#[temperature]
+#command=$SCRIPT_DIR/temperature
+#label=Temp : 
+#interval=10
 #T_WARN=70
 #T_CRIT=90
 #SENSOR_CHIP=""
@@ -44,13 +44,13 @@ interval=30
 #OUTLABEL=/ Up: 
 ##TREAT_UNKNOWN_AS_UP=0
 
-[batterybar]
-command=$SCRIPT_DIR/batterybar
-label=Bat: 
-interval=5
-markup=pango
-min_width=Bat 🔋: ■■■■■
-# Discharging colors low to high
+#[batterybar]
+#command=$SCRIPT_DIR/batterybar
+#label=Bat: 
+#interval=5
+#markup=pango
+#min_width=Bat 🔋: ■■■■■
+## Discharging colors low to high
 #C1=#FF0027
 #C2=#FF3B05
 #C3=#FFB923
@@ -64,23 +64,22 @@ min_width=Bat 🔋: ■■■■■
 #AC_COLOR=#535353
 
 [date]
-command=date +'%a %d %b %Y %H:%M:%S'
+command=date +'%a %d %b %H:%M'
 interval=1
 
-[suspend]
-full_text="Sleep "
-align=center
-command=systemctl suspend
+#[suspend]
+#full_text="Sleep "
+#align=center
+#command=systemctl suspend
 
-[lock]
-full_text="Lock "
-align=center
-command=i3-msg -q exec "~/dev/programming/scripts/lockScreen.sh"
+#[lock]
+#full_text="Lock "
+#align=center
+#command=i3-msg -q exec "~/dev/programming/scripts/lockScreen.sh"
 
-[xkb_layout]
-command=$SCRIPT_DIR/xkb_layout
-font=Iosevka
-font_weight=bold
-interval=persist
-markup=pango
-
+#[xkb_layout]
+#command=$SCRIPT_DIR/xkb_layout
+#font=Iosevka
+#font_weight=bold
+#interval=persist
+#markup=pango

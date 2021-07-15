@@ -123,7 +123,7 @@ ForegroundVisited=155,89,182
 
 [Colors:Window]
 BackgroundAlternate=49,54,59
-BackgroundNormal=42,46,50
+BackgroundNormal=49,54,59
 DecorationFocus=61,174,233
 DecorationHover=61,174,233
 ForegroundActive=61,174,233
@@ -147,19 +147,19 @@ BrowserApplication=brave-browser.desktop
 ColorScheme=BreezeDarkSelectedBetter
 Name=Breeze Light
 TerminalApplication=kitty
-XftAntialias=true
-XftHintStyle=hintslight
-XftSubPixel=rgb
-fixed=LiterationMono Nerd Font,9,-1,5,50,0,0,0,0,0
-font=Open Sans,9,-1,5,50,0,0,0,0,0
-menuFont=Open Sans,9,-1,5,50,0,0,0,0,0
+XftAntialias=false
+XftHintStyle=hintfull
+XftSubPixel=none
+fixed=Cozette [slavfox],10,-1,5,50,0,0,0,0,0
+font=Tewi,8,-1,5,50,0,0,0,0,0
+menuFont=Tewi,8,-1,5,50,0,0,0,0,0
 shadeSortColumn=true
 smallestReadableFont=scientifica,8,-1,5,57,0,0,0,0,0,Medium
 toolBarFont=xos4 Terminus,9,-1,5,50,0,0,0,0,0
 widgetStyle=Breeze
 
 [Icons]
-Theme=Papirus-Dark
+Theme=breeze-dark
 
 [KDE]
 AnimationDurationFactor=0.5
@@ -178,16 +178,16 @@ Show Full Path=false
 Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
-Show hidden files=false
+Show hidden files=true
 Sort by=Name
 Sort directories first=true
 Sort reversed=false
 Speedbar Width=162
-View Style=Simple
+View Style=Detail
 
 [KScreen]
-ScaleFactor=1
-ScreenScaleFactors=eDP1=1;DP1=1;DP2=1;HDMI1=1;HDMI2=1;VIRTUAL1=1;
+ScaleFactor=1.25
+ScreenScaleFactors=eDP1=1.25;DP1=1.25;DP2=1.25;HDMI1=1.25;HDMI2=1.25;VIRTUAL1=1.25;
 
 [MainToolbarIcons]
 Size=16
